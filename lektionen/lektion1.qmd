@@ -215,6 +215,10 @@ Jetzt seid ihr dran! Eine der häufigsten und manchmal frustrierendsten Aufgaben
 
     *   **Der eigentliche Job:** Bereinigt die Daten manuell. Das bedeutet, die Werte von Hand in die richtigen Zellen zu tippen, sodass ihr eine saubere, strukturierte Tabelle habt. Achtet darauf, die Prozentzeichen (`%`) zu entfernen, damit Datawrapper die Werte als Zahlen erkennt. Ihr solltet drei Spalten haben: `Grund`, `2019` und `2023`.
 
+    * ::: {.callout-note collapse="true" title="Wenn alles in einer Spalte ist..."}
+![](/images/lektion1/text_to_cols.png)
+:::
+
 4.  **Mit Datawrapper verknüpfen (Der wichtigste Schritt!):**
     *   Jetzt kommt der entscheidende Teil, den wir gelernt haben: Wir kopieren die Daten nicht, wir verknüpfen sie direkt!
     *   Klickt in eurem sauberen Google Sheet oben rechts auf den grünen **"Teilen"**-Button.
