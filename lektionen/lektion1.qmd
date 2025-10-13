@@ -1,0 +1,118 @@
+---
+title: "Chart & Chill Vol. 1"
+description: "Was sind Daten und wie bekomme ich sie in Datawrapper"
+author: "Robin"
+date: "2025-10-13"
+image: "/images/lektion1/csv.png"
+---
+
+::: {.callout-important title="TL;DR: Der beste Weg für Daten" collapse="true"}
+- **Google Sheets ist die beste Methode:** Der einfachste und flexibelste Weg, um Daten in Datawrapper zu bekommen, besonders bei der Zusammenarbeit im Team und bei sich ändernden Daten.
+- **Pro-Tipp:** Gebt [sheet.new](https://sheet.new){target="_blank"} in die Adresszeile eures Browsers ein, um sofort ein neues Google Sheet zu erstellen.
+- **Verbunden Zellen:** Keine verbundenen Zellen in der ersten Zeile.
+- **Spaltenüberschriften:** Jede Spalte muss eine eindeutige Überschrift haben.
+- **Jede Zeile ist ein Datenpunkt:** Jede Zeile muss eine eindeutige Beobachtung repräsentieren.
+- **Mehr erfahren:** Eine detaillierte Übersicht (mit Videos!) aller Upload-Möglichkeiten findet ihr in diesem Artikel der [Datawrapper Academy](https://academy.datawrapper.de/article/86-upload-data).
+:::
+
+
+## Was sind Daten?
+
+Im einfachsten Sinne sind Daten Sammlungen von Informationen. Für uns als Journalist:innen können das ganz unterschiedliche Dinge sein:
+
+-   **Tabellarische Daten:** Das ist die häufigste Form. Denkt an Excel-Tabellen oder Google Sheets. Jede Zeile ist ein Datensatz (z.B. ein Land, eine Person) und jede Spalte ist ein Merkmal (z.B. Bevölkerungszahl, Alter).
+-   **Geodaten:** Diese Daten haben einen räumlichen Bezug, z.B. die Koordinaten von Städten oder die Umrisse von Ländern. Datawrapper kann hervorragend damit umgehen.
+-   **Textdaten:** Auch unstrukturierte Texte können Daten sein, z.B. Reden von Politiker:innen oder Tweets. Diese müssen aber oft erst aufbereitet werden.
+
+::: {.callout-note title="Typische Datenformate"}
+- **CSV (.csv):** Comma-Separated Values. Das einfachste und universellste Format für Tabellendaten. Jede Tabellenkalkulation kann das exportieren. Wir werden es fast immer benutzen.
+- **Excel (.xlsx):** Das bekannte Excel-Format. Datawrapper kann das zwar importieren, aber CSV ist oft weniger fehleranfällig.
+- **JSON (.json):** JavaScript Object Notation. Ein flexibles Format, das oft von APIs (Programmierschnittstellen) im Web verwendet wird.
+- **GeoJSON (.geojson) / Shapefiles (.shp):** Standardformate für Geodaten. Wenn ihr Karten machen wollt, werdet ihr diesen Formaten begegnen. Datawrapper kann GeoJSONs direkt verarbeiten.
+:::
+
+## Wo finde ich Daten?
+
+Gute Daten sind die Grundlage jeder guten Datenvisualisierung. Hier sind einige Anlaufstellen:
+
+-   **Statistische Ämter:** Destatis in Deutschland, Eurostat für die EU, die Weltbank für globale Daten.
+-   **Open-Data-Portale:** Viele Städte und Länder bieten mittlerweile Open-Data-Portale an (z.B. [data.gv.at](https://data.gv.at), [opendata.swiss](https://opendata.swiss)).
+
+::: {.callout-note collapse="true" title="Csvs sind die häufigsten Datenformate"}
+![](/images/lektion1/csv_datagvat.png)
+:::
+
+-   **Wissenschaftliche Studien:** Forschungsinstitute veröffentlichen oft ihre Datensätze.
+-   **Eigene Recherche:** Manchmal müsst ihr die Daten selbst erheben, z.B. durch Umfragen oder das systematische Sammeln von Informationen.
+
+## Wie bereite ich Daten für Datawrapper vor? (Best Practices)
+
+Datawrapper mag "saubere" und "tidy" (aufgeräumte) Daten. Je besser eure Daten vorbereitet sind, desto schneller und einfacher ist die Visualisierung. Hier sind die wichtigsten Regeln, die ihr immer beachten solltet:
+
+1.  **Ein Header, eine Zeile:** Die allererste Zeile muss die eindeutigen Spaltenüberschriften enthalten. Keine leeren Zeilen darüber, keine verbundenen Zellen.
+
+::: {.callout-note collapse="true"}
+## So nicht!
+![](/images/lektion1/verbundene_zellen.png)
+:::
+
+
+2.  **Ein Datensatz pro Zeile:** Jede Zeile sollte eine einzelne Beobachtung repräsentieren (z.B. ein Land, ein Jahr, eine Person).
+3.  **Ein Merkmal pro Spalte:** Jede Spalte sollte genau eine Variable enthalten (z.B. Einwohner, BIP, Name). Mischt keine unterschiedlichen Informationstypen in einer Spalte.
+4.  **Keine Formatierungen:** Datawrapper ignoriert fette Schrift, Farben oder kursive Buchstaben. Wichtiger ist der Inhalt. Entfernt auch Tausendertrennzeichen (wie `.` oder `,`) aus Zahlen. `1000000` ist gut, `1.000.000` ist schlecht. Dezimaltrennzeichen sollten ein Punkt (`.`) sein.
+5.  **Konsistente Bezeichnungen:** Achtet auf einheitliche Schreibweisen, besonders bei Kategorien (z.B. immer "CDU" und nicht mal "CDU" und mal "Christlich Demokratische Union").
+6.  **Lange vs. Breite Daten:** Für die meisten Diagramme (insbesondere Linien- und Balkendiagramme über die Zeit) bevorzugt Datawrapper ein "langes" Datenformat anstelle eines "breiten".
+
+Das beste Format für den Upload ist eine **CSV-Datei** (Comma-Separated Values) oder die direkte Anbindung an ein **Google Sheet**.
+
+## Wie lade ich Daten in Datawrapper hoch?
+
+Es gibt mehrere Wege, Daten in Datawrapper zu bekommen, aber einer ist für den journalistischen Alltag besonders mächtig.
+
+1.  **Kopieren & Einfügen:** Schnell und einfach für einmalige Visualisierungen. Öffnet eure Tabelle, markiert alles (inkl. Header), kopiert es und fügt es in Datawrapper ein. Funktioniert gut, ist aber nicht flexibel.
+2.  **CSV-Upload:** Eine solide Methode. Ihr könnt eine CSV-Datei exportieren und in Datawrapper hochladen.
+
+3.  **Verknüpfung mit Google Sheets (Der empfohlene Weg):** Dies ist die beste Methode für Daten, die sich ändern oder aktualisiert werden könnten (z.B. Umfrageergebnisse, Wahlergebnisse, Corona-Zahlen).
+    - **Der riesige Vorteil:** Wenn ihr euer Google Sheet veröffentlicht und mit Datawrapper verknüpft, müsst ihr eure Daten nie wieder manuell hochladen. **Ändert sich eine Zahl im Google Sheet, könnt ihr eure Visualisierung in Datawrapper mit einem Klick aktualisieren.** Das spart unglaublich viel Zeit und vermeidet Fehler.
+    - **So geht's:** Erstellt euer Google Sheet, geht auf `Datei > Freigeben > Im Web veröffentlichen` und wählt "Kommagetrennte Werte (.csv)". Kopiert den Link und fügt ihn in Datawrapper ein.
+
+Nach dem Upload prüft Datawrapper eure Daten. Achtet auf eventuelle Fehlermeldungen und korrigiert die Spaltentypen (Text, Zahl, Datum), falls Datawrapper sie nicht automatisch richtig erkannt hat.
+
+Das war's für die erste Lektion! Im nächsten Teil werden wir unsere ersten Diagramme erstellen.
+
+---
+
+## 🏆 Challenge: Daten aus einem PDF retten
+
+Jetzt seid ihr dran! Eine der häufigsten und manchmal frustrierendsten Aufgaben im Datenjournalismus ist es, interessante Daten aus PDF-Dokumenten zu befreien.
+
+**Euer Ziel:** Eine einfache Tabelle aus einem PDF-Bericht in Datawrapper visualisieren.
+
+**Das Problem:** PDFs sind oft "Datengräber". Man kann die Tabellen zwar sehen, aber nur schwer herauskopieren. Beim direkten Kopieren geht oft die Tabellenstruktur kaputt, Zahlen werden als Text erkannt oder es entstehen Fehler.
+
+**Eure Aufgabe:**
+
+1.  **Bericht finden:** Öffnet den [Kernbericht der Studierenden-Sozialerhebung 2023](https://www.sozialerhebung.at/images/Berichte/Sola23/Studierenden-Sozialerhebung-2023---Kernbericht.pdf).
+
+2.  **Tabelle auswählen:** Sucht euch eine einfache Tabelle aus dem Bericht aus. Ein gutes Beispiel ist **Tabelle 154: "Gründe für die derzeitigen finanziellen Schwierigkeiten 2019 und 2023"**. Sie ist übersichtlich und hat nur wenige Spalten.
+
+3.  **Daten in Google Sheets übertragen:**
+    *   Öffnet ein neues Google Sheet (z.B. mit [sheet.new](https://sheet.new){target="_blank"}).
+    *   Versucht, die Tabelle aus dem PDF zu kopieren und in das Sheet einzufügen. Ihr werdet wahrscheinlich sehen, dass das Ergebnis unsauber ist.
+        ::: {.callout-note title="Pro-Tipp: KI zu Hilfe nehmen" collapse="true"}
+        Das manuelle Abtippen ist mühsam und fehleranfällig. Moderne KI-Tools können euch hier enorm helfen!
+
+        Tools wie ChatGPT, Claude oder Gemini können unstrukturierte Daten aus PDFs oft erstaunlich gut in saubere Tabellen umwandeln. Probiert es aus: Kopiert den unsauberen Text aus dem PDF und bittet die KI, daraus eine CSV-formatierte Tabelle zu erstellen. Das kann euch sehr viel Zeit sparen.
+
+        ![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXduZ3k1cWE0ZnY4aXAxYWUxeGZxcXpjZ2RlczhvYmd6bGd6aXlycyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tczJoRU7XwBS8/giphy.gif)
+        :::
+    *   **Der eigentliche Job:** Bereinigt die Daten manuell. Das bedeutet, die Werte von Hand in die richtigen Zellen zu tippen, sodass ihr eine saubere, strukturierte Tabelle habt. Achtet darauf, die Prozentzeichen (`%`) zu entfernen, damit Datawrapper die Werte als Zahlen erkennt. Ihr solltet drei Spalten haben: `Grund`, `2019` und `2023`.
+
+4.  **Mit Datawrapper verknüpfen (Der wichtigste Schritt!):**
+    *   Jetzt kommt der entscheidende Teil, den wir gelernt haben: Wir kopieren die Daten nicht, wir verknüpfen sie direkt!
+    *   Klickt in eurem sauberen Google Sheet oben rechts auf den grünen **"Teilen"**-Button.
+    *   Ändert im Pop-up-Fenster den "Allgemeinen Zugriff" auf **"Jeder, der über den Link verfügt"**.
+    *   Klickt auf **"Link kopieren"**.
+    *   Fügt diesen Link in Datawrapper in Schritt 1 bei der Option **"Connect Google Sheet"** ein.
+    *   Das war's! Jetzt ist eure Visualisierung direkt mit dem Google Sheet verbunden. Wenn ihr später einen Tippfehler im Sheet korrigiert, könnt ihr die Grafik in Datawrapper mit einem Klick aktualisieren, ohne alles neu hochladen zu müssen.
+    *   (Erstellt eine Visualisierung. Ein gruppiertes Säulendiagramm wäre hier eine gute Wahl, um die Veränderungen von 2019 zu 2023 zu zeigen.)

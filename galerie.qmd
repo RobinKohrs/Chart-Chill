@@ -1,0 +1,5 @@
+---
+title: "Galerie"
+---
+
+Eine Galerie von Diagrammen, die mit Datawrapper erstellt wurden.

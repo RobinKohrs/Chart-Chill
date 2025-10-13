@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Chart & Chill"
+  navbar:
+    left:
+      - href: index.qmd
+        text: "Startseite"
+      - href: erste-schritte.qmd
+        text: "Erste Schritte"
+      - href: lektionen.qmd
+        text: "Lektionen"
+      - href: galerie.qmd
+        text: "Galerie"
+      - href: ueber.qmd
+        text: "Über"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true

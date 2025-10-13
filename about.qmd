@@ -1,0 +1,5 @@
+---
+title: "About"
+---
+
+This website is for a weekly class on Datawrapper for journalists.

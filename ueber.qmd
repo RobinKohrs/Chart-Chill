@@ -1,0 +1,5 @@
+---
+title: "Über"
+---
+
+Diese Website ist für einen wöchentlichen Kurs über Datawrapper für Journalist:innen.

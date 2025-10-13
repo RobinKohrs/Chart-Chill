@@ -1,0 +1,11 @@
+---
+title: "Lektionen"
+listing:
+  contents: "lektionen/*.qmd"
+  sort: "title"
+  type: grid
+  grid-columns: 2
+  filter-ui: true
+---
+
+Hier findet ihr eine Übersicht aller Lektionen. Wählt eine aus, um zu beginnen.

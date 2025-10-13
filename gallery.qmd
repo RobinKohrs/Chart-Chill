@@ -1,0 +1,5 @@
+---
+title: "Gallery"
+---
+
+A gallery of charts made with Datawrapper.

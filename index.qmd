@@ -1,0 +1,5 @@
+---
+title: "Willkommen bei Chart & Chill"
+---
+
+Dies ist eine Website zum Erlernen von Datawrapper.
