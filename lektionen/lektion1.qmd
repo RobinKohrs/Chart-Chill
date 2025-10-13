@@ -138,14 +138,18 @@ Für Datawrapper sind "SPÖ" und "Sozialdemokratische Partei" zwei komplett unte
 Das ist ein wichtiges Konzept. Stellt euch vor, ihr habt Verkaufszahlen für mehrere Produkte über mehrere Jahre.
 
 **"Breite Daten"** haben für jedes Jahr eine eigene Spalte. Das ist oft unpraktisch, aber für manche Diagrammtypen in Datawrapper (wie z.B. Linien-Diagramme) notwendig.
-##### Breit:
+
+**Breit:**
+
 | Produkt | 2021 | 2022 | 2023 |
 |---|---|---|---|
 | Apfel | 100 | 120 | 140 |
 | Birne | 80 | 85 | 95 |
 
 **"Lange Daten"** haben eine Spalte für die Jahreszahl und eine für den Wert. Das ist flexibler und oft der "ordentlichere" Weg, Daten zu speichern.
-##### Lang:
+
+**Lang:**
+
 | Produkt | Jahr | Verkauft |
 |---|---|---|
 | Apfel | 2021 | 100 |
@@ -155,10 +159,16 @@ Das ist ein wichtiges Konzept. Stellt euch vor, ihr habt Verkaufszahlen für meh
 | Birne | 2022 | 85 |
 | Birne | 2023 | 95 |
 
-Unsere Challenge am Ende der Lektion zeigt euch genau, wie ihr von einem Format zum anderen kommt!
-:::
+Welches Format das richtige ist, hängt stark vom Diagrammtyp ab, den ihr erstellen wollt. Ein Liniendiagramm in Datawrapper zum Beispiel erwartet für jede Linie eine eigene Spalte. Die erste Spalte ist dabei die X-Achse (oft eine Zeitangabe).
 
-Das beste Format für den Upload ist eine **CSV-Datei** (Comma-Separated Values) oder die direkte Anbindung an ein **Google Sheet**.
+**Beispiel für Datawrapper-Liniendiagramm (Breit):**
+
+| Jahr | Apfel | Birne |
+|---|---|---|
+| 2021 | 100 | 80 |
+| 2022 | 120 | 85 |
+| 2023 | 140 | 95 |
+:::
 
 ## Wie lade ich Daten in Datawrapper hoch?
 

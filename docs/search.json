@@ -1,38 +1,31 @@
 [
   {
-    "objectID": "erste-schritte.html",
-    "href": "erste-schritte.html",
-    "title": "Erste Schritte",
+    "objectID": "lessons.html",
+    "href": "lessons.html",
+    "title": "Lessons",
     "section": "",
-    "text": "Hier erfahrt ihr, wie ihr mit Datawrapper beginnen könnt."
+    "text": "Browse the lessons below."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "galerie.html",
+    "href": "galerie.html",
+    "title": "Galerie",
     "section": "",
-    "text": "This website is for a weekly class on Datawrapper for journalists."
+    "text": "Eine Galerie von Diagrammen, die mit Datawrapper erstellt wurden."
   },
   {
-    "objectID": "gallery.html",
-    "href": "gallery.html",
-    "title": "Gallery",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Willkommen bei Chart & Chill",
     "section": "",
-    "text": "A gallery of charts made with Datawrapper."
+    "text": "Dies ist eine Website zum Erlernen von Datawrapper."
   },
   {
-    "objectID": "ueber.html",
-    "href": "ueber.html",
-    "title": "Über",
+    "objectID": "lektionen.html",
+    "href": "lektionen.html",
+    "title": "Lektionen",
     "section": "",
-    "text": "Diese Website ist begleitend zu einen regelmäßigen Kurs über Datawrapper für Journalist:innen.\nBei Fragen zu Datawrapper oder Datenvisualisierung im Allgemeinen könnt ihr euch jederzeit an uns wenden. Schreibt uns einfach eine E-Mail: datenjournalismus@derstandard.at"
-  },
-  {
-    "objectID": "get-started.html",
-    "href": "get-started.html",
-    "title": "Get Started",
-    "section": "",
-    "text": "Here’s how to get started with Datawrapper."
+    "text": "Hier findet ihr eine Übersicht aller Lektionen. Wählt eine aus, um zu beginnen.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nChart & Chill Vol. 1\n\n\nWas sind Daten und wie bekomme ich sie in Datawrapper\n\n\n\nRobin\n\n\nOct 13, 2025\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lektionen/lektion1.html",
@@ -60,7 +53,7 @@
     "href": "lektionen/lektion1.html#wie-bereite-ich-daten-für-datawrapper-vor-best-practices",
     "title": "Chart & Chill Vol. 1",
     "section": "Wie bereite ich Daten für Datawrapper vor? (Best Practices)",
-    "text": "Wie bereite ich Daten für Datawrapper vor? (Best Practices)\nDatawrapper mag “saubere” und “tidy” (aufgeräumte) Daten. Je besser eure Daten vorbereitet sind, desto schneller und einfacher ist die Visualisierung. Hier sind die wichtigsten Regeln, die ihr immer beachten solltet:\n\nEin Header, eine Zeile: Die allererste Zeile muss die eindeutigen Spaltenüberschriften enthalten. Keine leeren Zeilen darüber, keine verbundenen Zellen.\n\n\n\n\n\n\n\nSo nicht!\n\n\n\n\n\n\n\n\n\n\nEin Datensatz pro Zeile: Jede Zeile sollte eine einzelne Beobachtung repräsentieren (z.B. ein Land, ein Jahr, eine Person).\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nJede Zeile muss eine vollständige Information sein. Informationen zu einem Datenpunkt (z.B. zu Österreich 2023) dürfen nicht über mehrere Zeilen verteilt sein.\n\nSo nicht!\n\n\n\nLand\nWert\n\n\n\n\nÖsterreich\n\n\n\n\n9.100.000\n\n\nDeutschland\n\n\n\n\n84.400.000\n\n\n\n\n\nSondern so:\n\n\n\nLand\nEinwohner\n\n\n\n\nÖsterreich\n9100000\n\n\nDeutschland\n84400000\n\n\n\n\n\n\n\n\nEin Merkmal pro Spalte: Jede Spalte sollte genau eine Variable enthalten (z.B. Einwohner, BIP, Name). Mischt keine unterschiedlichen Informationstypen in einer Spalte.\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nVermischt keine unterschiedlichen Informationen in einer einzigen Zelle. Datawrapper kann “Wien, 1. Bezirk” nicht als Stadt und Bezirk gleichzeitig verstehen. Trennt diese Informationen in eigene Spalten auf.\n\nSo nicht!\n\n\n\nOrt\nEinwohner\n\n\n\n\nWien, 1. Bezirk\n16.033\n\n\nWien, 2. Bezirk\n108.433\n\n\n\n\n\nSondern so:\n\n\n\nStadt\nBezirk\nEinwohner\n\n\n\n\nWien\n1\n16033\n\n\nWien\n2\n108433\n\n\n\n\n\n\n\n\nKeine Formatierungen: Datawrapper ignoriert fette Schrift, Farben oder kursive Buchstaben. Wichtiger ist der Inhalt. Entfernt auch Tausendertrennzeichen (wie . oder ,) aus Zahlen. 1000000 ist gut, 1.000.000 ist schlecht. Dezimaltrennzeichen sollten ein Punkt (.) sein.\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nDatawrapper braucht “rohe” Zahlen. Prozentzeichen, Währungssymbole, Tausenderpunkte oder Kommas machen aus einer Zahl einen Text und unbrauchbar für die Visualisierung. Formatierungen wie Fett- oder Kursivdruck werden ignoriert.\n\nSo nicht!\n\n\n\nLand\nBIP (in Mio.)\nAnteil\n\n\n\n\nÖsterreich\n€ 447.710\n5,5%\n\n\nDeutschland\n€ 3.867.050\n47,3%\n\n\n\n\n\nSondern so:\n\n\n\nLand\nBIP_Mio\nAnteil\n\n\n\n\nÖsterreich\n447710\n5.5\n\n\nDeutschland\n3867050\n47.3\n\n\n\n\n\n\n\n\nKonsistente Bezeichnungen: Achtet auf einheitliche Schreibweisen, besonders bei Kategorien (z.B. immer “CDU” und nicht mal “CDU” und mal “Christlich Demokratische Union”).\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nFür Datawrapper sind “SPÖ” und “Sozialdemokratische Partei” zwei komplett unterschiedliche Dinge. Achtet darauf, dass gleiche Dinge immer exakt gleich geschrieben werden, sonst bekommt ihr ungewollt neue Kategorien in eurer Grafik.\n\nSo nicht!\n\n\n\nPartei\nStimmen\n\n\n\n\nSPÖ\n1000\n\n\nOVP\n1200\n\n\nSPOE\n500\n\n\nÖVP\n800\n\n\n\n\n\nSondern so:\n\n\n\nPartei\nStimmen\n\n\n\n\nSPÖ\n1500\n\n\nÖVP\n2000\n\n\n\n\n\n\n\n\nLange vs. Breite Daten: Für die meisten Diagramme (insbesondere Linien- und Balkendiagramme über die Zeit) bevorzugt Datawrapper ein “langes” Datenformat anstelle eines “breiten”.\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nDas ist ein wichtiges Konzept. Stellt euch vor, ihr habt Verkaufszahlen für mehrere Produkte über mehrere Jahre.\n“Breite Daten” haben für jedes Jahr eine eigene Spalte. Das ist oft unpraktisch, aber für manche Diagrammtypen in Datawrapper (wie z.B. Linien-Diagramme) notwendig. ##### Breit: | Produkt | 2021 | 2022 | 2023 | |—|—|—|—| | Apfel | 100 | 120 | 140 | | Birne | 80 | 85 | 95 |\n“Lange Daten” haben eine Spalte für die Jahreszahl und eine für den Wert. Das ist flexibler und oft der “ordentlichere” Weg, Daten zu speichern. ##### Lang: | Produkt | Jahr | Verkauft | |—|—|—| | Apfel | 2021 | 100 | | Apfel | 2022 | 120 | | Apfel | 2023 | 140 | | Birne | 2021 | 80 | | Birne | 2022 | 85 | | Birne | 2023 | 95 |\nUnsere Challenge am Ende der Lektion zeigt euch genau, wie ihr von einem Format zum anderen kommt!\n\n\n\nDas beste Format für den Upload ist eine CSV-Datei (Comma-Separated Values) oder die direkte Anbindung an ein Google Sheet."
+    "text": "Wie bereite ich Daten für Datawrapper vor? (Best Practices)\nDatawrapper mag “saubere” und “tidy” (aufgeräumte) Daten. Je besser eure Daten vorbereitet sind, desto schneller und einfacher ist die Visualisierung. Hier sind die wichtigsten Regeln, die ihr immer beachten solltet:\n\nEin Header, eine Zeile: Die allererste Zeile muss die eindeutigen Spaltenüberschriften enthalten. Keine leeren Zeilen darüber, keine verbundenen Zellen.\n\n\n\n\n\n\n\nSo nicht!\n\n\n\n\n\n\n\n\n\n\nEin Datensatz pro Zeile: Jede Zeile sollte eine einzelne Beobachtung repräsentieren (z.B. ein Land, ein Jahr, eine Person).\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nJede Zeile muss eine vollständige Information sein. Informationen zu einem Datenpunkt (z.B. zu Österreich 2023) dürfen nicht über mehrere Zeilen verteilt sein.\n\nSo nicht!\n\n\n\nLand\nWert\n\n\n\n\nÖsterreich\n\n\n\n\n9.100.000\n\n\nDeutschland\n\n\n\n\n84.400.000\n\n\n\n\n\nSondern so:\n\n\n\nLand\nEinwohner\n\n\n\n\nÖsterreich\n9100000\n\n\nDeutschland\n84400000\n\n\n\n\n\n\n\n\nEin Merkmal pro Spalte: Jede Spalte sollte genau eine Variable enthalten (z.B. Einwohner, BIP, Name). Mischt keine unterschiedlichen Informationstypen in einer Spalte.\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nVermischt keine unterschiedlichen Informationen in einer einzigen Zelle. Datawrapper kann “Wien, 1. Bezirk” nicht als Stadt und Bezirk gleichzeitig verstehen. Trennt diese Informationen in eigene Spalten auf.\n\nSo nicht!\n\n\n\nOrt\nEinwohner\n\n\n\n\nWien, 1. Bezirk\n16.033\n\n\nWien, 2. Bezirk\n108.433\n\n\n\n\n\nSondern so:\n\n\n\nStadt\nBezirk\nEinwohner\n\n\n\n\nWien\n1\n16033\n\n\nWien\n2\n108433\n\n\n\n\n\n\n\n\nKeine Formatierungen: Datawrapper ignoriert fette Schrift, Farben oder kursive Buchstaben. Wichtiger ist der Inhalt. Entfernt auch Tausendertrennzeichen (wie . oder ,) aus Zahlen. 1000000 ist gut, 1.000.000 ist schlecht. Dezimaltrennzeichen sollten ein Punkt (.) sein.\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nDatawrapper braucht “rohe” Zahlen. Prozentzeichen, Währungssymbole, Tausenderpunkte oder Kommas machen aus einer Zahl einen Text und unbrauchbar für die Visualisierung. Formatierungen wie Fett- oder Kursivdruck werden ignoriert.\n\nSo nicht!\n\n\n\nLand\nBIP (in Mio.)\nAnteil\n\n\n\n\nÖsterreich\n€ 447.710\n5,5%\n\n\nDeutschland\n€ 3.867.050\n47,3%\n\n\n\n\n\nSondern so:\n\n\n\nLand\nBIP_Mio\nAnteil\n\n\n\n\nÖsterreich\n447710\n5.5\n\n\nDeutschland\n3867050\n47.3\n\n\n\n\n\n\n\n\nKonsistente Bezeichnungen: Achtet auf einheitliche Schreibweisen, besonders bei Kategorien (z.B. immer “CDU” und nicht mal “CDU” und mal “Christlich Demokratische Union”).\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nFür Datawrapper sind “SPÖ” und “Sozialdemokratische Partei” zwei komplett unterschiedliche Dinge. Achtet darauf, dass gleiche Dinge immer exakt gleich geschrieben werden, sonst bekommt ihr ungewollt neue Kategorien in eurer Grafik.\n\nSo nicht!\n\n\n\nPartei\nStimmen\n\n\n\n\nSPÖ\n1000\n\n\nOVP\n1200\n\n\nSPOE\n500\n\n\nÖVP\n800\n\n\n\n\n\nSondern so:\n\n\n\nPartei\nStimmen\n\n\n\n\nSPÖ\n1500\n\n\nÖVP\n2000\n\n\n\n\n\n\n\n\nLange vs. Breite Daten: Für die meisten Diagramme (insbesondere Linien- und Balkendiagramme über die Zeit) bevorzugt Datawrapper ein “langes” Datenformat anstelle eines “breiten”.\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nDas ist ein wichtiges Konzept. Stellt euch vor, ihr habt Verkaufszahlen für mehrere Produkte über mehrere Jahre.\n“Breite Daten” haben für jedes Jahr eine eigene Spalte. Das ist oft unpraktisch, aber für manche Diagrammtypen in Datawrapper (wie z.B. Linien-Diagramme) notwendig.\nBreit:\n\n\n\nProdukt\n2021\n2022\n2023\n\n\n\n\nApfel\n100\n120\n140\n\n\nBirne\n80\n85\n95\n\n\n\n“Lange Daten” haben eine Spalte für die Jahreszahl und eine für den Wert. Das ist flexibler und oft der “ordentlichere” Weg, Daten zu speichern.\nLang:\n\n\n\nProdukt\nJahr\nVerkauft\n\n\n\n\nApfel\n2021\n100\n\n\nApfel\n2022\n120\n\n\nApfel\n2023\n140\n\n\nBirne\n2021\n80\n\n\nBirne\n2022\n85\n\n\nBirne\n2023\n95\n\n\n\nWelches Format das richtige ist, hängt stark vom Diagrammtyp ab, den ihr erstellen wollt. Ein Liniendiagramm in Datawrapper zum Beispiel erwartet für jede Linie eine eigene Spalte. Die erste Spalte ist dabei die X-Achse (oft eine Zeitangabe).\nBeispiel für Datawrapper-Liniendiagramm (Breit):\n\n\n\nJahr\nApfel\nBirne\n\n\n\n\n2021\n100\n80\n\n\n2022\n120\n85\n\n\n2023\n140\n95"
   },
   {
     "objectID": "lektionen/lektion1.html#wie-lade-ich-daten-in-datawrapper-hoch",
@@ -77,31 +70,31 @@
     "text": "Challenge: Daten aus einem PDF retten\nJetzt seid ihr dran! Eine der häufigsten und manchmal frustrierendsten Aufgaben im Datenjournalismus ist es, interessante Daten aus PDF-Dokumenten zu befreien.\nEuer Ziel: Eine einfache Tabelle aus einem PDF-Bericht in Datawrapper visualisieren.\nDas Problem: PDFs sind oft “Datengräber”. Man kann die Tabellen zwar sehen, aber nur schwer herauskopieren. Beim direkten Kopieren geht oft die Tabellenstruktur kaputt, Zahlen werden als Text erkannt oder es entstehen Fehler.\nEure Aufgabe:\n\nBericht finden: Öffnet den Kernbericht der Studierenden-Sozialerhebung 2023.\nTabelle auswählen: Sucht euch eine einfache Tabelle aus dem Bericht aus. Ein gutes Beispiel ist Tabelle 154: “Gründe für die derzeitigen finanziellen Schwierigkeiten 2019 und 2023”. Sie ist übersichtlich und hat nur wenige Spalten.\nDaten in Google Sheets übertragen:\n\nÖffnet ein neues Google Sheet (z.B. mit sheet.new).\nVersucht, die Tabelle aus dem PDF zu kopieren und in das Sheet einzufügen. Ihr werdet wahrscheinlich sehen, dass das Ergebnis unsauber ist.\n\n\n\n\n\n\nPro-Tipp: KI zu Hilfe nehmen\n\n\n\n\n\nDas manuelle Abtippen ist mühsam und fehleranfällig. Moderne KI-Tools können euch hier enorm helfen!\nTools wie ChatGPT, Claude oder Gemini können unstrukturierte Daten aus PDFs oft erstaunlich gut in saubere Tabellen umwandeln. Probiert es aus: Kopiert den unsauberen Text aus dem PDF und bittet die KI, daraus eine CSV-formatierte Tabelle zu erstellen. Das kann euch sehr viel Zeit sparen.\n\n\n\n\nDer eigentliche Job: Bereinigt die Daten manuell. Das bedeutet, die Werte von Hand in die richtigen Zellen zu tippen, sodass ihr eine saubere, strukturierte Tabelle habt. Achtet darauf, die Prozentzeichen (%) zu entfernen, damit Datawrapper die Werte als Zahlen erkennt. Ihr solltet drei Spalten haben: Grund, 2019 und 2023.\n\nMit Datawrapper verknüpfen (Der wichtigste Schritt!):\n\nJetzt kommt der entscheidende Teil, den wir gelernt haben: Wir kopieren die Daten nicht, wir verknüpfen sie direkt!\nKlickt in eurem sauberen Google Sheet oben rechts auf den grünen “Teilen”-Button.\nÄndert im Pop-up-Fenster den “Allgemeinen Zugriff” auf “Jeder, der über den Link verfügt”.\nKlickt auf “Link kopieren”.\nFügt diesen Link in Datawrapper in Schritt 1 bei der Option “Connect Google Sheet” ein.\nDas war’s! Jetzt ist eure Visualisierung direkt mit dem Google Sheet verbunden. Wenn ihr später einen Tippfehler im Sheet korrigiert, könnt ihr die Grafik in Datawrapper mit einem Klick aktualisieren, ohne alles neu hochladen zu müssen.\n(Erstellt eine Visualisierung. Ein gruppiertes Säulendiagramm wäre hier eine gute Wahl, um die Veränderungen von 2019 zu 2023 zu zeigen.)"
   },
   {
-    "objectID": "lektionen.html",
-    "href": "lektionen.html",
-    "title": "Lektionen",
+    "objectID": "get-started.html",
+    "href": "get-started.html",
+    "title": "Get Started",
     "section": "",
-    "text": "Hier findet ihr eine Übersicht aller Lektionen. Wählt eine aus, um zu beginnen.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nChart & Chill Vol. 1\n\n\nWas sind Daten und wie bekomme ich sie in Datawrapper\n\n\n\nRobin\n\n\nOct 13, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Here’s how to get started with Datawrapper."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Willkommen bei Chart & Chill",
+    "objectID": "ueber.html",
+    "href": "ueber.html",
+    "title": "Über",
     "section": "",
-    "text": "Dies ist eine Website zum Erlernen von Datawrapper."
+    "text": "Diese Website ist begleitend zu einen regelmäßigen Kurs über Datawrapper für Journalist:innen.\nBei Fragen zu Datawrapper oder Datenvisualisierung im Allgemeinen könnt ihr euch jederzeit an uns wenden. Schreibt uns einfach eine E-Mail: datenjournalismus@derstandard.at"
   },
   {
-    "objectID": "galerie.html",
-    "href": "galerie.html",
-    "title": "Galerie",
+    "objectID": "gallery.html",
+    "href": "gallery.html",
+    "title": "Gallery",
     "section": "",
-    "text": "Eine Galerie von Diagrammen, die mit Datawrapper erstellt wurden."
+    "text": "A gallery of charts made with Datawrapper."
   },
   {
-    "objectID": "lessons.html",
-    "href": "lessons.html",
-    "title": "Lessons",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Browse the lessons below."
+    "text": "This website is for a weekly class on Datawrapper for journalists."
   }
 ]

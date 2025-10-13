@@ -556,13 +556,106 @@ Was heißt das?
 <div id="callout-9" class="callout-9-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Das ist ein wichtiges Konzept. Stellt euch vor, ihr habt Verkaufszahlen für mehrere Produkte über mehrere Jahre.</p>
-<p><strong>“Breite Daten”</strong> haben für jedes Jahr eine eigene Spalte. Das ist oft unpraktisch, aber für manche Diagrammtypen in Datawrapper (wie z.B. Linien-Diagramme) notwendig. ##### Breit: | Produkt | 2021 | 2022 | 2023 | |—|—|—|—| | Apfel | 100 | 120 | 140 | | Birne | 80 | 85 | 95 |</p>
-<p><strong>“Lange Daten”</strong> haben eine Spalte für die Jahreszahl und eine für den Wert. Das ist flexibler und oft der “ordentlichere” Weg, Daten zu speichern. ##### Lang: | Produkt | Jahr | Verkauft | |—|—|—| | Apfel | 2021 | 100 | | Apfel | 2022 | 120 | | Apfel | 2023 | 140 | | Birne | 2021 | 80 | | Birne | 2022 | 85 | | Birne | 2023 | 95 |</p>
-<p>Unsere Challenge am Ende der Lektion zeigt euch genau, wie ihr von einem Format zum anderen kommt!</p>
+<p><strong>“Breite Daten”</strong> haben für jedes Jahr eine eigene Spalte. Das ist oft unpraktisch, aber für manche Diagrammtypen in Datawrapper (wie z.B. Linien-Diagramme) notwendig.</p>
+<p><strong>Breit:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Produkt</th>
+<th>2021</th>
+<th>2022</th>
+<th>2023</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Apfel</td>
+<td>100</td>
+<td>120</td>
+<td>140</td>
+</tr>
+<tr class="even">
+<td>Birne</td>
+<td>80</td>
+<td>85</td>
+<td>95</td>
+</tr>
+</tbody>
+</table>
+<p><strong>“Lange Daten”</strong> haben eine Spalte für die Jahreszahl und eine für den Wert. Das ist flexibler und oft der “ordentlichere” Weg, Daten zu speichern.</p>
+<p><strong>Lang:</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Produkt</th>
+<th>Jahr</th>
+<th>Verkauft</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Apfel</td>
+<td>2021</td>
+<td>100</td>
+</tr>
+<tr class="even">
+<td>Apfel</td>
+<td>2022</td>
+<td>120</td>
+</tr>
+<tr class="odd">
+<td>Apfel</td>
+<td>2023</td>
+<td>140</td>
+</tr>
+<tr class="even">
+<td>Birne</td>
+<td>2021</td>
+<td>80</td>
+</tr>
+<tr class="odd">
+<td>Birne</td>
+<td>2022</td>
+<td>85</td>
+</tr>
+<tr class="even">
+<td>Birne</td>
+<td>2023</td>
+<td>95</td>
+</tr>
+</tbody>
+</table>
+<p>Welches Format das richtige ist, hängt stark vom Diagrammtyp ab, den ihr erstellen wollt. Ein Liniendiagramm in Datawrapper zum Beispiel erwartet für jede Linie eine eigene Spalte. Die erste Spalte ist dabei die X-Achse (oft eine Zeitangabe).</p>
+<p><strong>Beispiel für Datawrapper-Liniendiagramm (Breit):</strong></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Jahr</th>
+<th>Apfel</th>
+<th>Birne</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2021</td>
+<td>100</td>
+<td>80</td>
+</tr>
+<tr class="even">
+<td>2022</td>
+<td>120</td>
+<td>85</td>
+</tr>
+<tr class="odd">
+<td>2023</td>
+<td>140</td>
+<td>95</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
-<p>Das beste Format für den Upload ist eine <strong>CSV-Datei</strong> (Comma-Separated Values) oder die direkte Anbindung an ein <strong>Google Sheet</strong>.</p>
 </section>
 <section id="wie-lade-ich-daten-in-datawrapper-hoch" class="level2">
 <h2 class="anchored" data-anchor-id="wie-lade-ich-daten-in-datawrapper-hoch">Wie lade ich Daten in Datawrapper hoch?</h2>
