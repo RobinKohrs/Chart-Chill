@@ -8,8 +8,6 @@ website:
     left:
       - href: index.qmd
         text: "Startseite"
-      - href: erste-schritte.qmd
-        text: "Erste Schritte"
       - href: lektionen.qmd
         text: "Lektionen"
       - href: galerie.qmd
