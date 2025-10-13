@@ -56,12 +56,107 @@ Datawrapper mag "saubere" und "tidy" (aufgeräumte) Daten. Je besser eure Daten 
 ![](/images/lektion1/verbundene_zellen.png)
 :::
 
-
 2.  **Ein Datensatz pro Zeile:** Jede Zeile sollte eine einzelne Beobachtung repräsentieren (z.B. ein Land, ein Jahr, eine Person).
+
+::: {.callout-note title="Was heißt das?" collapse="true"}
+Jede Zeile muss eine vollständige Information sein. Informationen zu einem Datenpunkt (z.B. zu Österreich 2023) dürfen nicht über mehrere Zeilen verteilt sein.
+
+##### So nicht!
+| Land | Wert |
+|---|---|
+| Österreich | |
+| | 9.100.000 |
+| Deutschland | |
+| | 84.400.000|
+
+##### Sondern so:
+| Land | Einwohner |
+|---|---|
+| Österreich | 9100000 |
+| Deutschland| 84400000|
+:::
+
 3.  **Ein Merkmal pro Spalte:** Jede Spalte sollte genau eine Variable enthalten (z.B. Einwohner, BIP, Name). Mischt keine unterschiedlichen Informationstypen in einer Spalte.
+
+::: {.callout-note title="Was heißt das?" collapse="true"}
+Vermischt keine unterschiedlichen Informationen in einer einzigen Zelle. Datawrapper kann "Wien, 1. Bezirk" nicht als Stadt und Bezirk gleichzeitig verstehen. Trennt diese Informationen in eigene Spalten auf.
+
+##### So nicht!
+| Ort | Einwohner |
+|---|---|
+| Wien, 1. Bezirk | 16.033 |
+| Wien, 2. Bezirk | 108.433 |
+
+##### Sondern so:
+| Stadt | Bezirk | Einwohner |
+|---|---|---|
+| Wien | 1 | 16033 |
+| Wien | 2 | 108433 |
+:::
+
 4.  **Keine Formatierungen:** Datawrapper ignoriert fette Schrift, Farben oder kursive Buchstaben. Wichtiger ist der Inhalt. Entfernt auch Tausendertrennzeichen (wie `.` oder `,`) aus Zahlen. `1000000` ist gut, `1.000.000` ist schlecht. Dezimaltrennzeichen sollten ein Punkt (`.`) sein.
+
+::: {.callout-note title="Was heißt das?" collapse="true"}
+Datawrapper braucht "rohe" Zahlen. Prozentzeichen, Währungssymbole, Tausenderpunkte oder Kommas machen aus einer Zahl einen Text und unbrauchbar für die Visualisierung. Formatierungen wie Fett- oder Kursivdruck werden ignoriert.
+
+##### So nicht!
+| Land | BIP (in Mio.) | Anteil |
+|---|---|---|
+| Österreich | **€ 447.710** | 5,5% |
+| Deutschland| € 3.867.050 | 47,3%|
+
+##### Sondern so:
+| Land | BIP_Mio | Anteil |
+|---|---|---|
+| Österreich | 447710 | 5.5 |
+| Deutschland| 3867050 | 47.3 |
+:::
+
 5.  **Konsistente Bezeichnungen:** Achtet auf einheitliche Schreibweisen, besonders bei Kategorien (z.B. immer "CDU" und nicht mal "CDU" und mal "Christlich Demokratische Union").
+
+::: {.callout-note title="Was heißt das?" collapse="true"}
+Für Datawrapper sind "SPÖ" und "Sozialdemokratische Partei" zwei komplett unterschiedliche Dinge. Achtet darauf, dass gleiche Dinge immer exakt gleich geschrieben werden, sonst bekommt ihr ungewollt neue Kategorien in eurer Grafik.
+
+##### So nicht!
+| Partei | Stimmen |
+|---|---|
+| SPÖ | 1000 |
+| OVP | 1200 |
+| SPOE | 500 |
+| ÖVP | 800 |
+
+##### Sondern so:
+| Partei | Stimmen |
+|---|---|
+| SPÖ | 1500 |
+| ÖVP | 2000 |
+:::
+
 6.  **Lange vs. Breite Daten:** Für die meisten Diagramme (insbesondere Linien- und Balkendiagramme über die Zeit) bevorzugt Datawrapper ein "langes" Datenformat anstelle eines "breiten".
+
+::: {.callout-note title="Was heißt das?" collapse="true"}
+Das ist ein wichtiges Konzept. Stellt euch vor, ihr habt Verkaufszahlen für mehrere Produkte über mehrere Jahre.
+
+**"Breite Daten"** haben für jedes Jahr eine eigene Spalte. Das ist oft unpraktisch, aber für manche Diagrammtypen in Datawrapper (wie z.B. Linien-Diagramme) notwendig.
+##### Breit:
+| Produkt | 2021 | 2022 | 2023 |
+|---|---|---|---|
+| Apfel | 100 | 120 | 140 |
+| Birne | 80 | 85 | 95 |
+
+**"Lange Daten"** haben eine Spalte für die Jahreszahl und eine für den Wert. Das ist flexibler und oft der "ordentlichere" Weg, Daten zu speichern.
+##### Lang:
+| Produkt | Jahr | Verkauft |
+|---|---|---|
+| Apfel | 2021 | 100 |
+| Apfel | 2022 | 120 |
+| Apfel | 2023 | 140 |
+| Birne | 2021 | 80 |
+| Birne | 2022 | 85 |
+| Birne | 2023 | 95 |
+
+Unsere Challenge am Ende der Lektion zeigt euch genau, wie ihr von einem Format zum anderen kommt!
+:::
 
 Das beste Format für den Upload ist eine **CSV-Datei** (Comma-Separated Values) oder die direkte Anbindung an ein **Google Sheet**.
 
@@ -82,7 +177,7 @@ Das war's für die erste Lektion! Im nächsten Teil werden wir unsere ersten Dia
 
 ---
 
-## 🏆 Challenge: Daten aus einem PDF retten
+##  Challenge: Daten aus einem PDF retten
 
 Jetzt seid ihr dran! Eine der häufigsten und manchmal frustrierendsten Aufgaben im Datenjournalismus ist es, interessante Daten aus PDF-Dokumenten zu befreien.
 
@@ -99,13 +194,15 @@ Jetzt seid ihr dran! Eine der häufigsten und manchmal frustrierendsten Aufgaben
 3.  **Daten in Google Sheets übertragen:**
     *   Öffnet ein neues Google Sheet (z.B. mit [sheet.new](https://sheet.new){target="_blank"}).
     *   Versucht, die Tabelle aus dem PDF zu kopieren und in das Sheet einzufügen. Ihr werdet wahrscheinlich sehen, dass das Ergebnis unsauber ist.
-        ::: {.callout-note title="Pro-Tipp: KI zu Hilfe nehmen" collapse="true"}
+
+    * ::: {.callout-note title="Pro-Tipp: KI zu Hilfe nehmen" collapse="true"}
         Das manuelle Abtippen ist mühsam und fehleranfällig. Moderne KI-Tools können euch hier enorm helfen!
 
         Tools wie ChatGPT, Claude oder Gemini können unstrukturierte Daten aus PDFs oft erstaunlich gut in saubere Tabellen umwandeln. Probiert es aus: Kopiert den unsauberen Text aus dem PDF und bittet die KI, daraus eine CSV-formatierte Tabelle zu erstellen. Das kann euch sehr viel Zeit sparen.
 
         ![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXduZ3k1cWE0ZnY4aXAxYWUxeGZxcXpjZ2RlczhvYmd6bGd6aXlycyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tczJoRU7XwBS8/giphy.gif)
-        :::
+        
+
     *   **Der eigentliche Job:** Bereinigt die Daten manuell. Das bedeutet, die Werte von Hand in die richtigen Zellen zu tippen, sodass ihr eine saubere, strukturierte Tabelle habt. Achtet darauf, die Prozentzeichen (`%`) zu entfernen, damit Datawrapper die Werte als Zahlen erkennt. Ihr solltet drei Spalten haben: `Grund`, `2019` und `2023`.
 
 4.  **Mit Datawrapper verknüpfen (Der wichtigste Schritt!):**

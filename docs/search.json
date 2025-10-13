@@ -4,49 +4,14 @@
     "href": "erste-schritte.html",
     "title": "Erste Schritte",
     "section": "",
-    "text": "Hier erfahren Sie, wie Sie mit Datawrapper beginnen können."
+    "text": "Hier erfahrt ihr, wie ihr mit Datawrapper beginnen könnt."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Willkommen bei Chart & Chill",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
     "section": "",
-    "text": "Dies ist eine Website zum Erlernen von Datawrapper."
-  },
-  {
-    "objectID": "lektionen.html",
-    "href": "lektionen.html",
-    "title": "Lektionen",
-    "section": "",
-    "text": "Hier findet ihr eine Übersicht aller Lektionen. Wählt eine aus, um zu beginnen.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nChart & Chill Vol. 1\n\n\nWas sind Daten und wie bekomme ich sie in Datawrapper\n\n\n\nRobin\n\n\nOct 13, 2025\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "lektionen/lektion1.html",
-    "href": "lektionen/lektion1.html",
-    "title": "Chart & Chill Vol. 1",
-    "section": "",
-    "text": "TL;DR: Der beste Weg für Daten\n\n\n\n\n\n\nGoogle Sheets ist die beste Methode: Der einfachste und flexibelste Weg, um Daten in Datawrapper zu bekommen, besonders bei der Zusammenarbeit im Team und bei sich ändernden Daten.\nPro-Tipp: Gebt sheet.new in die Adresszeile eures Browsers ein, um sofort ein neues Google Sheet zu erstellen.\nVerbunden Zellen: Keine verbundenen Zellen in der ersten Zeile.\nSpaltenüberschriften: Jede Spalte muss eine eindeutige Überschrift haben.\nJede Zeile ist ein Datenpunkt: Jede Zeile muss eine eindeutige Beobachtung repräsentieren.\nMehr erfahren: Eine detaillierte Übersicht (mit Videos!) aller Upload-Möglichkeiten findet ihr in diesem Artikel der Datawrapper Academy."
-  },
-  {
-    "objectID": "ueber.html",
-    "href": "ueber.html",
-    "title": "Über",
-    "section": "",
-    "text": "Diese Website ist für einen wöchentlichen Kurs über Datawrapper für Journalist:innen."
-  },
-  {
-    "objectID": "galerie.html",
-    "href": "galerie.html",
-    "title": "Galerie",
-    "section": "",
-    "text": "Eine Galerie von Diagrammen, die mit Datawrapper erstellt wurden."
-  },
-  {
-    "objectID": "lessons.html",
-    "href": "lessons.html",
-    "title": "Lessons",
-    "section": "",
-    "text": "Browse the lessons below."
+    "text": "This website is for a weekly class on Datawrapper for journalists."
   },
   {
     "objectID": "gallery.html",
@@ -56,6 +21,13 @@
     "text": "A gallery of charts made with Datawrapper."
   },
   {
+    "objectID": "ueber.html",
+    "href": "ueber.html",
+    "title": "Über",
+    "section": "",
+    "text": "Diese Website ist begleitend zu einen regelmäßigen Kurs über Datawrapper für Journalist:innen.\nBei Fragen zu Datawrapper oder Datenvisualisierung im Allgemeinen könnt ihr euch jederzeit an uns wenden. Schreibt uns einfach eine E-Mail: datenjournalismus@derstandard.at"
+  },
+  {
     "objectID": "get-started.html",
     "href": "get-started.html",
     "title": "Get Started",
@@ -63,11 +35,11 @@
     "text": "Here’s how to get started with Datawrapper."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "lektionen/lektion1.html",
+    "href": "lektionen/lektion1.html",
+    "title": "Chart & Chill Vol. 1",
     "section": "",
-    "text": "This website is for a weekly class on Datawrapper for journalists."
+    "text": "TL;DR: Der beste Weg für Daten\n\n\n\n\n\n\nGoogle Sheets ist die beste Methode: Der einfachste und flexibelste Weg, um Daten in Datawrapper zu bekommen, besonders bei der Zusammenarbeit im Team und bei sich ändernden Daten.\nPro-Tipp: Gebt sheet.new in die Adresszeile eures Browsers ein, um sofort ein neues Google Sheet zu erstellen.\nVerbunden Zellen: Keine verbundenen Zellen in der ersten Zeile.\nSpaltenüberschriften: Jede Spalte muss eine eindeutige Überschrift haben.\nJede Zeile ist ein Datenpunkt: Jede Zeile muss eine eindeutige Beobachtung repräsentieren.\nMehr erfahren: Eine detaillierte Übersicht (mit Videos!) aller Upload-Möglichkeiten findet ihr in diesem Artikel der Datawrapper Academy."
   },
   {
     "objectID": "lektionen/lektion1.html#was-sind-daten",
@@ -84,11 +56,11 @@
     "text": "Wo finde ich Daten?\nGute Daten sind die Grundlage jeder guten Datenvisualisierung. Hier sind einige Anlaufstellen:\n\nStatistische Ämter: Destatis in Deutschland, Eurostat für die EU, die Weltbank für globale Daten.\nOpen-Data-Portale: Viele Städte und Länder bieten mittlerweile Open-Data-Portale an (z.B. data.gv.at, opendata.swiss).\n\n\n\n\n\n\n\nCsvs sind die häufigsten Datenformate\n\n\n\n\n\n\n\n\n\n\nWissenschaftliche Studien: Forschungsinstitute veröffentlichen oft ihre Datensätze.\nEigene Recherche: Manchmal müsst ihr die Daten selbst erheben, z.B. durch Umfragen oder das systematische Sammeln von Informationen."
   },
   {
-    "objectID": "lektionen/lektion1.html#wie-bereite-ich-daten-für-datawrapper-vor",
-    "href": "lektionen/lektion1.html#wie-bereite-ich-daten-für-datawrapper-vor",
+    "objectID": "lektionen/lektion1.html#wie-bereite-ich-daten-für-datawrapper-vor-best-practices",
+    "href": "lektionen/lektion1.html#wie-bereite-ich-daten-für-datawrapper-vor-best-practices",
     "title": "Chart & Chill Vol. 1",
-    "section": "Wie bereite ich Daten für Datawrapper vor?",
-    "text": "Wie bereite ich Daten für Datawrapper vor?\nDatawrapper mag “saubere” und “tidy” (aufgeräumte) Daten. Das bedeutet im Wesentlichen:\n\nEin Header: Die erste Zeile sollte die Überschriften für Ihre Spalten enthalten.\nEine Beobachtung pro Zeile: Jede Zeile sollte für sich stehen (z.B. ein Land, ein Jahr).\nEin Merkmal pro Spalte: Jede Spalte sollte eine Variable enthalten (z.B. Einwohner, BIP).\nKeine leeren Zeilen oder Spalten: Entfernen Sie diese.\nKorrektes Format: Zahlen sollten als Zahlen formatiert sein (ohne Tausendertrennzeichen wie Kommas oder Punkte), Daten als Datum (z.B. JJJJ-MM-TT).\n\nDas beste Format für den Upload ist eine CSV-Datei (Comma-Separated Values). Sie können diese aus fast jedem Tabellenkalkulationsprogramm exportieren."
+    "section": "Wie bereite ich Daten für Datawrapper vor? (Best Practices)",
+    "text": "Wie bereite ich Daten für Datawrapper vor? (Best Practices)\nDatawrapper mag “saubere” und “tidy” (aufgeräumte) Daten. Je besser eure Daten vorbereitet sind, desto schneller und einfacher ist die Visualisierung. Hier sind die wichtigsten Regeln, die ihr immer beachten solltet:\n\nEin Header, eine Zeile: Die allererste Zeile muss die eindeutigen Spaltenüberschriften enthalten. Keine leeren Zeilen darüber, keine verbundenen Zellen.\n\n\n\n\n\n\n\nSo nicht!\n\n\n\n\n\n\n\n\n\n\nEin Datensatz pro Zeile: Jede Zeile sollte eine einzelne Beobachtung repräsentieren (z.B. ein Land, ein Jahr, eine Person).\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nJede Zeile muss eine vollständige Information sein. Informationen zu einem Datenpunkt (z.B. zu Österreich 2023) dürfen nicht über mehrere Zeilen verteilt sein.\n\nSo nicht!\n\n\n\nLand\nWert\n\n\n\n\nÖsterreich\n\n\n\n\n9.100.000\n\n\nDeutschland\n\n\n\n\n84.400.000\n\n\n\n\n\nSondern so:\n\n\n\nLand\nEinwohner\n\n\n\n\nÖsterreich\n9100000\n\n\nDeutschland\n84400000\n\n\n\n\n\n\n\n\nEin Merkmal pro Spalte: Jede Spalte sollte genau eine Variable enthalten (z.B. Einwohner, BIP, Name). Mischt keine unterschiedlichen Informationstypen in einer Spalte.\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nVermischt keine unterschiedlichen Informationen in einer einzigen Zelle. Datawrapper kann “Wien, 1. Bezirk” nicht als Stadt und Bezirk gleichzeitig verstehen. Trennt diese Informationen in eigene Spalten auf.\n\nSo nicht!\n\n\n\nOrt\nEinwohner\n\n\n\n\nWien, 1. Bezirk\n16.033\n\n\nWien, 2. Bezirk\n108.433\n\n\n\n\n\nSondern so:\n\n\n\nStadt\nBezirk\nEinwohner\n\n\n\n\nWien\n1\n16033\n\n\nWien\n2\n108433\n\n\n\n\n\n\n\n\nKeine Formatierungen: Datawrapper ignoriert fette Schrift, Farben oder kursive Buchstaben. Wichtiger ist der Inhalt. Entfernt auch Tausendertrennzeichen (wie . oder ,) aus Zahlen. 1000000 ist gut, 1.000.000 ist schlecht. Dezimaltrennzeichen sollten ein Punkt (.) sein.\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nDatawrapper braucht “rohe” Zahlen. Prozentzeichen, Währungssymbole, Tausenderpunkte oder Kommas machen aus einer Zahl einen Text und unbrauchbar für die Visualisierung. Formatierungen wie Fett- oder Kursivdruck werden ignoriert.\n\nSo nicht!\n\n\n\nLand\nBIP (in Mio.)\nAnteil\n\n\n\n\nÖsterreich\n€ 447.710\n5,5%\n\n\nDeutschland\n€ 3.867.050\n47,3%\n\n\n\n\n\nSondern so:\n\n\n\nLand\nBIP_Mio\nAnteil\n\n\n\n\nÖsterreich\n447710\n5.5\n\n\nDeutschland\n3867050\n47.3\n\n\n\n\n\n\n\n\nKonsistente Bezeichnungen: Achtet auf einheitliche Schreibweisen, besonders bei Kategorien (z.B. immer “CDU” und nicht mal “CDU” und mal “Christlich Demokratische Union”).\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nFür Datawrapper sind “SPÖ” und “Sozialdemokratische Partei” zwei komplett unterschiedliche Dinge. Achtet darauf, dass gleiche Dinge immer exakt gleich geschrieben werden, sonst bekommt ihr ungewollt neue Kategorien in eurer Grafik.\n\nSo nicht!\n\n\n\nPartei\nStimmen\n\n\n\n\nSPÖ\n1000\n\n\nOVP\n1200\n\n\nSPOE\n500\n\n\nÖVP\n800\n\n\n\n\n\nSondern so:\n\n\n\nPartei\nStimmen\n\n\n\n\nSPÖ\n1500\n\n\nÖVP\n2000\n\n\n\n\n\n\n\n\nLange vs. Breite Daten: Für die meisten Diagramme (insbesondere Linien- und Balkendiagramme über die Zeit) bevorzugt Datawrapper ein “langes” Datenformat anstelle eines “breiten”.\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nDas ist ein wichtiges Konzept. Stellt euch vor, ihr habt Verkaufszahlen für mehrere Produkte über mehrere Jahre.\n“Breite Daten” haben für jedes Jahr eine eigene Spalte. Das ist oft unpraktisch, aber für manche Diagrammtypen in Datawrapper (wie z.B. Linien-Diagramme) notwendig. ##### Breit: | Produkt | 2021 | 2022 | 2023 | |—|—|—|—| | Apfel | 100 | 120 | 140 | | Birne | 80 | 85 | 95 |\n“Lange Daten” haben eine Spalte für die Jahreszahl und eine für den Wert. Das ist flexibler und oft der “ordentlichere” Weg, Daten zu speichern. ##### Lang: | Produkt | Jahr | Verkauft | |—|—|—| | Apfel | 2021 | 100 | | Apfel | 2022 | 120 | | Apfel | 2023 | 140 | | Birne | 2021 | 80 | | Birne | 2022 | 85 | | Birne | 2023 | 95 |\nUnsere Challenge am Ende der Lektion zeigt euch genau, wie ihr von einem Format zum anderen kommt!\n\n\n\nDas beste Format für den Upload ist eine CSV-Datei (Comma-Separated Values) oder die direkte Anbindung an ein Google Sheet."
   },
   {
     "objectID": "lektionen/lektion1.html#wie-lade-ich-daten-in-datawrapper-hoch",
@@ -98,31 +70,38 @@
     "text": "Wie lade ich Daten in Datawrapper hoch?\nEs gibt mehrere Wege, Daten in Datawrapper zu bekommen, aber einer ist für den journalistischen Alltag besonders mächtig.\n\nKopieren & Einfügen: Schnell und einfach für einmalige Visualisierungen. Öffnet eure Tabelle, markiert alles (inkl. Header), kopiert es und fügt es in Datawrapper ein. Funktioniert gut, ist aber nicht flexibel.\nCSV-Upload: Eine solide Methode. Ihr könnt eine CSV-Datei exportieren und in Datawrapper hochladen.\nVerknüpfung mit Google Sheets (Der empfohlene Weg): Dies ist die beste Methode für Daten, die sich ändern oder aktualisiert werden könnten (z.B. Umfrageergebnisse, Wahlergebnisse, Corona-Zahlen).\n\nDer riesige Vorteil: Wenn ihr euer Google Sheet veröffentlicht und mit Datawrapper verknüpft, müsst ihr eure Daten nie wieder manuell hochladen. Ändert sich eine Zahl im Google Sheet, könnt ihr eure Visualisierung in Datawrapper mit einem Klick aktualisieren. Das spart unglaublich viel Zeit und vermeidet Fehler.\nSo geht’s: Erstellt euer Google Sheet, geht auf Datei &gt; Freigeben &gt; Im Web veröffentlichen und wählt “Kommagetrennte Werte (.csv)”. Kopiert den Link und fügt ihn in Datawrapper ein.\n\n\nNach dem Upload prüft Datawrapper eure Daten. Achtet auf eventuelle Fehlermeldungen und korrigiert die Spaltentypen (Text, Zahl, Datum), falls Datawrapper sie nicht automatisch richtig erkannt hat.\nDas war’s für die erste Lektion! Im nächsten Teil werden wir unsere ersten Diagramme erstellen."
   },
   {
-    "objectID": "lektionen/lektion1.html#wie-bereite-ich-daten-für-datawrapper-vor-best-practices",
-    "href": "lektionen/lektion1.html#wie-bereite-ich-daten-für-datawrapper-vor-best-practices",
-    "title": "Chart & Chill Vol. 1",
-    "section": "Wie bereite ich Daten für Datawrapper vor? (Best Practices)",
-    "text": "Wie bereite ich Daten für Datawrapper vor? (Best Practices)\nDatawrapper mag “saubere” und “tidy” (aufgeräumte) Daten. Je besser eure Daten vorbereitet sind, desto schneller und einfacher ist die Visualisierung. Hier sind die wichtigsten Regeln, die ihr immer beachten solltet:\n\nEin Header, eine Zeile: Die allererste Zeile muss die eindeutigen Spaltenüberschriften enthalten. Keine leeren Zeilen darüber, keine verbundenen Zellen.\n\n\n\n\n\n\n\nSo nicht!\n\n\n\n\n\n\n\n\n\n\nEin Datensatz pro Zeile: Jede Zeile sollte eine einzelne Beobachtung repräsentieren (z.B. ein Land, ein Jahr, eine Person).\nEin Merkmal pro Spalte: Jede Spalte sollte genau eine Variable enthalten (z.B. Einwohner, BIP, Name). Mischt keine unterschiedlichen Informationstypen in einer Spalte.\nKeine Formatierungen: Datawrapper ignoriert fette Schrift, Farben oder kursive Buchstaben. Wichtiger ist der Inhalt. Entfernt auch Tausendertrennzeichen (wie . oder ,) aus Zahlen. 1000000 ist gut, 1.000.000 ist schlecht. Dezimaltrennzeichen sollten ein Punkt (.) sein.\nKonsistente Bezeichnungen: Achtet auf einheitliche Schreibweisen, besonders bei Kategorien (z.B. immer “CDU” und nicht mal “CDU” und mal “Christlich Demokratische Union”).\nLange vs. Breite Daten: Für die meisten Diagramme (insbesondere Linien- und Balkendiagramme über die Zeit) bevorzugt Datawrapper ein “langes” Datenformat anstelle eines “breiten”.\n\nDas beste Format für den Upload ist eine CSV-Datei (Comma-Separated Values) oder die direkte Anbindung an ein Google Sheet."
-  },
-  {
-    "objectID": "lektionen/lektion1.html#challenge-ein-praxisbeispiel",
-    "href": "lektionen/lektion1.html#challenge-ein-praxisbeispiel",
-    "title": "Chart & Chill Vol. 1",
-    "section": "🏆 Challenge: Ein Praxisbeispiel",
-    "text": "🏆 Challenge: Ein Praxisbeispiel\nJetzt seid ihr dran! Diese Aufgabe führt euch durch einen typischen Arbeitsprozess im Datenjournalismus: Daten finden, säubern, umformen und für die Visualisierung vorbereiten.\nEuer Ziel: Eine Linien-Grafik in Datawrapper erstellen, die die Bevölkerungsentwicklung aller Wiener Bezirke über die Zeit zeigt.\nDas Problem: Die Rohdaten sind oft nicht im richtigen Format. In diesem Fall liegt jeder Datenpunkt (Bevölkerung eines Bezirks in einem bestimmten Jahr) in einer eigenen Zeile. Das nennt man ein “langes” Datenformat. Datawrapper benötigt für eine Grafik mit mehreren Linien jedoch für jede Linie (also jeden Bezirk) eine eigene Spalte. Wir müssen die Daten also in ein “breites” Format umwandeln.\nDie Schritte:\n\n1. Herunterladen\nLadet den CSV-Datensatz zur Bevölkerung der Wiener Bezirke seit 1869 von Open Data Österreich herunter.\n\n\n2. Hochladen\nImportiert die heruntergeladene CSV-Datei in ein neues Google Sheet.\n\n\n3. Säubern & Umformen\nDas ist der wichtigste Schritt. Eure rohe Tabelle muss aufgeräumt werden.\n\nÜberflüssige Zeilen löschen: Die Datei hat eine Titelzeile (BevÃ¶lkerung nach Geschlecht...). Löscht diese, sodass die Spaltenüberschriften (NUTS;DISTRICT_CODE;...) in der allerersten Zeile stehen.\nKodierungsproblem verstehen: Euch wird auffallen, dass “Bevölkerung” als BevÃ¶lkerung angezeigt wird. Das ist ein klassischer Fehler bei der Zeichenkodierung. Die Datei wurde wahrscheinlich mit einer alten Windows-Kodierung gespeichert, aber als modernes UTF-8 gelesen. Google Sheets korrigiert das beim Import meist automatisch. Falls nicht, achtet beim Import-Dialog darauf, die richtige Kodierung (oft Windows-1252) auszuwählen.\nDaten umwandeln (Pivot-Tabelle):\n\nMarkiert die drei Spalten, die wir brauchen: DISTRICT_CODE, REF_YEAR und POP_TOTAL.\nGeht im Menü auf Daten &gt; Pivot-Tabelle erstellen und wählt “Neues Tabellenblatt”.\nIm Pivot-Tabellen-Editor an der Seite, konfiguriert die Tabelle so:\n\nZeilen: REF_YEAR\nSpalten: DISTRICT_CODE\nWerte: POP_TOTAL (zusammengefasst als SUMME)\n\nDas Ergebnis ist eine perfekte “breite” Tabelle für Datawrapper.\n\n\n\n\n4. Zu Datawrapper\nKopiert eure fertige Pivot-Tabelle (inklusive der Header-Zeile und der ersten Spalte mit den Jahreszahlen) und fügt sie direkt in Datawrapper im Schritt “Daten hochladen” ein. Nun seid ihr bereit, eine Liniengrafik mit einer Linie für jeden Bezirk zu erstellen!"
-  },
-  {
-    "objectID": "lektionen/lektion1.html#tldr-der-beste-weg-für-daten",
-    "href": "lektionen/lektion1.html#tldr-der-beste-weg-für-daten",
-    "title": "Chart & Chill Vol. 1",
-    "section": "",
-    "text": "TL;DR: Der beste Weg für Daten\n\n\n\n\n\n\nGoogle Sheets ist die beste Methode: Der einfachste und flexibelste Weg, um Daten in Datawrapper zu bekommen, besonders bei der Zusammenarbeit im Team und bei sich ändernden Daten.\nPro-Tipp: Gebt sheet.new in die Adresszeile eures Browsers ein, um sofort ein neues Google Sheet zu erstellen.\nMehr erfahren: Eine detaillierte Übersicht (mit Videos!) aller Upload-Möglichkeiten findet ihr in diesem Artikel der Datawrapper Academy."
-  },
-  {
     "objectID": "lektionen/lektion1.html#challenge-daten-aus-einem-pdf-retten",
     "href": "lektionen/lektion1.html#challenge-daten-aus-einem-pdf-retten",
     "title": "Chart & Chill Vol. 1",
-    "section": "🏆 Challenge: Daten aus einem PDF retten",
-    "text": "🏆 Challenge: Daten aus einem PDF retten\nJetzt seid ihr dran! Eine der häufigsten und manchmal frustrierendsten Aufgaben im Datenjournalismus ist es, interessante Daten aus PDF-Dokumenten zu befreien.\nEuer Ziel: Eine einfache Tabelle aus einem PDF-Bericht in Datawrapper visualisieren.\nDas Problem: PDFs sind oft “Datengräber”. Man kann die Tabellen zwar sehen, aber nur schwer herauskopieren. Beim direkten Kopieren geht oft die Tabellenstruktur kaputt, Zahlen werden als Text erkannt oder es entstehen Fehler.\nEure Aufgabe:\n\nBericht finden: Öffnet den Kernbericht der Studierenden-Sozialerhebung 2023.\nTabelle auswählen: Sucht euch eine einfache Tabelle aus dem Bericht aus. Ein gutes Beispiel ist Tabelle 154: “Gründe für die derzeitigen finanziellen Schwierigkeiten 2019 und 2023”. Sie ist übersichtlich und hat nur wenige Spalten.\nDaten in Google Sheets übertragen:\n\nÖffnet ein neues Google Sheet (z.B. mit sheet.new).\nVersucht, die Tabelle aus dem PDF zu kopieren und in das Sheet einzufügen. Ihr werdet wahrscheinlich sehen, dass das Ergebnis unsauber ist. ::: {.callout-note title=“Pro-Tipp: KI zu Hilfe nehmen” collapse=“true”} Das manuelle Abtippen ist mühsam und fehleranfällig. Moderne KI-Tools können euch hier enorm helfen!\nTools wie ChatGPT, Claude oder Gemini können unstrukturierte Daten aus PDFs oft erstaunlich gut in saubere Tabellen umwandeln. Probiert es aus: Kopiert den unsauberen Text aus dem PDF und bittet die KI, daraus eine CSV-formatierte Tabelle zu erstellen. Das kann euch sehr viel Zeit sparen.\n :::\nDer eigentliche Job: Bereinigt die Daten manuell. Das bedeutet, die Werte von Hand in die richtigen Zellen zu tippen, sodass ihr eine saubere, strukturierte Tabelle habt. Achtet darauf, die Prozentzeichen (%) zu entfernen, damit Datawrapper die Werte als Zahlen erkennt. Ihr solltet drei Spalten haben: Grund, 2019 und 2023.\n\nMit Datawrapper verknüpfen (Der wichtigste Schritt!):\n\nJetzt kommt der entscheidende Teil, den wir gelernt haben: Wir kopieren die Daten nicht, wir verknüpfen sie direkt!\nKlickt in eurem sauberen Google Sheet oben rechts auf den grünen “Teilen”-Button.\nÄndert im Pop-up-Fenster den “Allgemeinen Zugriff” auf “Jeder, der über den Link verfügt”.\nKlickt auf “Link kopieren”.\nFügt diesen Link in Datawrapper in Schritt 1 bei der Option “Connect Google Sheet” ein.\nDas war’s! Jetzt ist eure Visualisierung direkt mit dem Google Sheet verbunden. Wenn ihr später einen Tippfehler im Sheet korrigiert, könnt ihr die Grafik in Datawrapper mit einem Klick aktualisieren, ohne alles neu hochladen zu müssen.\n(Erstellt eine Visualisierung. Ein gruppiertes Säulendiagramm wäre hier eine gute Wahl, um die Veränderungen von 2019 zu 2023 zu zeigen.)"
+    "section": "Challenge: Daten aus einem PDF retten",
+    "text": "Challenge: Daten aus einem PDF retten\nJetzt seid ihr dran! Eine der häufigsten und manchmal frustrierendsten Aufgaben im Datenjournalismus ist es, interessante Daten aus PDF-Dokumenten zu befreien.\nEuer Ziel: Eine einfache Tabelle aus einem PDF-Bericht in Datawrapper visualisieren.\nDas Problem: PDFs sind oft “Datengräber”. Man kann die Tabellen zwar sehen, aber nur schwer herauskopieren. Beim direkten Kopieren geht oft die Tabellenstruktur kaputt, Zahlen werden als Text erkannt oder es entstehen Fehler.\nEure Aufgabe:\n\nBericht finden: Öffnet den Kernbericht der Studierenden-Sozialerhebung 2023.\nTabelle auswählen: Sucht euch eine einfache Tabelle aus dem Bericht aus. Ein gutes Beispiel ist Tabelle 154: “Gründe für die derzeitigen finanziellen Schwierigkeiten 2019 und 2023”. Sie ist übersichtlich und hat nur wenige Spalten.\nDaten in Google Sheets übertragen:\n\nÖffnet ein neues Google Sheet (z.B. mit sheet.new).\nVersucht, die Tabelle aus dem PDF zu kopieren und in das Sheet einzufügen. Ihr werdet wahrscheinlich sehen, dass das Ergebnis unsauber ist.\n\n\n\n\n\n\nPro-Tipp: KI zu Hilfe nehmen\n\n\n\n\n\nDas manuelle Abtippen ist mühsam und fehleranfällig. Moderne KI-Tools können euch hier enorm helfen!\nTools wie ChatGPT, Claude oder Gemini können unstrukturierte Daten aus PDFs oft erstaunlich gut in saubere Tabellen umwandeln. Probiert es aus: Kopiert den unsauberen Text aus dem PDF und bittet die KI, daraus eine CSV-formatierte Tabelle zu erstellen. Das kann euch sehr viel Zeit sparen.\n\n\n\n\nDer eigentliche Job: Bereinigt die Daten manuell. Das bedeutet, die Werte von Hand in die richtigen Zellen zu tippen, sodass ihr eine saubere, strukturierte Tabelle habt. Achtet darauf, die Prozentzeichen (%) zu entfernen, damit Datawrapper die Werte als Zahlen erkennt. Ihr solltet drei Spalten haben: Grund, 2019 und 2023.\n\nMit Datawrapper verknüpfen (Der wichtigste Schritt!):\n\nJetzt kommt der entscheidende Teil, den wir gelernt haben: Wir kopieren die Daten nicht, wir verknüpfen sie direkt!\nKlickt in eurem sauberen Google Sheet oben rechts auf den grünen “Teilen”-Button.\nÄndert im Pop-up-Fenster den “Allgemeinen Zugriff” auf “Jeder, der über den Link verfügt”.\nKlickt auf “Link kopieren”.\nFügt diesen Link in Datawrapper in Schritt 1 bei der Option “Connect Google Sheet” ein.\nDas war’s! Jetzt ist eure Visualisierung direkt mit dem Google Sheet verbunden. Wenn ihr später einen Tippfehler im Sheet korrigiert, könnt ihr die Grafik in Datawrapper mit einem Klick aktualisieren, ohne alles neu hochladen zu müssen.\n(Erstellt eine Visualisierung. Ein gruppiertes Säulendiagramm wäre hier eine gute Wahl, um die Veränderungen von 2019 zu 2023 zu zeigen.)"
+  },
+  {
+    "objectID": "lektionen.html",
+    "href": "lektionen.html",
+    "title": "Lektionen",
+    "section": "",
+    "text": "Hier findet ihr eine Übersicht aller Lektionen. Wählt eine aus, um zu beginnen.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nChart & Chill Vol. 1\n\n\nWas sind Daten und wie bekomme ich sie in Datawrapper\n\n\n\nRobin\n\n\nOct 13, 2025\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Willkommen bei Chart & Chill",
+    "section": "",
+    "text": "Dies ist eine Website zum Erlernen von Datawrapper."
+  },
+  {
+    "objectID": "galerie.html",
+    "href": "galerie.html",
+    "title": "Galerie",
+    "section": "",
+    "text": "Eine Galerie von Diagrammen, die mit Datawrapper erstellt wurden."
+  },
+  {
+    "objectID": "lessons.html",
+    "href": "lessons.html",
+    "title": "Lessons",
+    "section": "",
+    "text": "Browse the lessons below."
   }
 ]

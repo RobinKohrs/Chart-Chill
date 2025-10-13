@@ -10,7 +10,7 @@
 <meta name="dcterms.date" content="2025-10-13">
 <meta name="description" content="Was sind Daten und wie bekomme ich sie in Datawrapper">
 
-<title>Chart &amp; Chill Vol. 1 – Chart &amp; Chill</title>
+<title>Chart &amp; Chill Vol. 1 – Chart &amp; Chill 📊</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Chart &amp; Chill</span>
+    <span class="navbar-title">Chart &amp; Chill 📊</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#wo-finde-ich-daten" id="toc-wo-finde-ich-daten" class="nav-link" data-scroll-target="#wo-finde-ich-daten">Wo finde ich Daten?</a></li>
   <li><a href="#wie-bereite-ich-daten-für-datawrapper-vor-best-practices" id="toc-wie-bereite-ich-daten-für-datawrapper-vor-best-practices" class="nav-link" data-scroll-target="#wie-bereite-ich-daten-für-datawrapper-vor-best-practices">Wie bereite ich Daten für Datawrapper vor? (Best Practices)</a></li>
   <li><a href="#wie-lade-ich-daten-in-datawrapper-hoch" id="toc-wie-lade-ich-daten-in-datawrapper-hoch" class="nav-link" data-scroll-target="#wie-lade-ich-daten-in-datawrapper-hoch">Wie lade ich Daten in Datawrapper hoch?</a></li>
-  <li><a href="#challenge-daten-aus-einem-pdf-retten" id="toc-challenge-daten-aus-einem-pdf-retten" class="nav-link" data-scroll-target="#challenge-daten-aus-einem-pdf-retten">🏆 Challenge: Daten aus einem PDF retten</a></li>
+  <li><a href="#challenge-daten-aus-einem-pdf-retten" id="toc-challenge-daten-aus-einem-pdf-retten" class="nav-link" data-scroll-target="#challenge-daten-aus-einem-pdf-retten">Challenge: Daten aus einem PDF retten</a></li>
   </ul>
 </nav>
     </div>
@@ -277,11 +277,295 @@ So nicht!
 </div>
 <ol start="2" type="1">
 <li><strong>Ein Datensatz pro Zeile:</strong> Jede Zeile sollte eine einzelne Beobachtung repräsentieren (z.B. ein Land, ein Jahr, eine Person).</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Was heißt das?">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Was heißt das?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Jede Zeile muss eine vollständige Information sein. Informationen zu einem Datenpunkt (z.B. zu Österreich 2023) dürfen nicht über mehrere Zeilen verteilt sein.</p>
+<section id="so-nicht-1" class="level5">
+<h5 class="anchored" data-anchor-id="so-nicht-1">So nicht!</h5>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Land</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Österreich</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>9.100.000</td>
+</tr>
+<tr class="odd">
+<td>Deutschland</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td>84.400.000</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sondern-so" class="level5">
+<h5 class="anchored" data-anchor-id="sondern-so">Sondern so:</h5>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Land</th>
+<th>Einwohner</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Österreich</td>
+<td>9100000</td>
+</tr>
+<tr class="even">
+<td>Deutschland</td>
+<td>84400000</td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+</div>
+</div>
+<ol start="3" type="1">
 <li><strong>Ein Merkmal pro Spalte:</strong> Jede Spalte sollte genau eine Variable enthalten (z.B. Einwohner, BIP, Name). Mischt keine unterschiedlichen Informationstypen in einer Spalte.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Was heißt das?">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Was heißt das?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Vermischt keine unterschiedlichen Informationen in einer einzigen Zelle. Datawrapper kann “Wien, 1. Bezirk” nicht als Stadt und Bezirk gleichzeitig verstehen. Trennt diese Informationen in eigene Spalten auf.</p>
+<section id="so-nicht-2" class="level5">
+<h5 class="anchored" data-anchor-id="so-nicht-2">So nicht!</h5>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Ort</th>
+<th>Einwohner</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Wien, 1. Bezirk</td>
+<td>16.033</td>
+</tr>
+<tr class="even">
+<td>Wien, 2. Bezirk</td>
+<td>108.433</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sondern-so-1" class="level5">
+<h5 class="anchored" data-anchor-id="sondern-so-1">Sondern so:</h5>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Stadt</th>
+<th>Bezirk</th>
+<th>Einwohner</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Wien</td>
+<td>1</td>
+<td>16033</td>
+</tr>
+<tr class="even">
+<td>Wien</td>
+<td>2</td>
+<td>108433</td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+</div>
+</div>
+<ol start="4" type="1">
 <li><strong>Keine Formatierungen:</strong> Datawrapper ignoriert fette Schrift, Farben oder kursive Buchstaben. Wichtiger ist der Inhalt. Entfernt auch Tausendertrennzeichen (wie <code>.</code> oder <code>,</code>) aus Zahlen. <code>1000000</code> ist gut, <code>1.000.000</code> ist schlecht. Dezimaltrennzeichen sollten ein Punkt (<code>.</code>) sein.</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Was heißt das?">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Was heißt das?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Datawrapper braucht “rohe” Zahlen. Prozentzeichen, Währungssymbole, Tausenderpunkte oder Kommas machen aus einer Zahl einen Text und unbrauchbar für die Visualisierung. Formatierungen wie Fett- oder Kursivdruck werden ignoriert.</p>
+<section id="so-nicht-3" class="level5">
+<h5 class="anchored" data-anchor-id="so-nicht-3">So nicht!</h5>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Land</th>
+<th>BIP (in Mio.)</th>
+<th>Anteil</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Österreich</td>
+<td><strong>€ 447.710</strong></td>
+<td>5,5%</td>
+</tr>
+<tr class="even">
+<td>Deutschland</td>
+<td>€ 3.867.050</td>
+<td>47,3%</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sondern-so-2" class="level5">
+<h5 class="anchored" data-anchor-id="sondern-so-2">Sondern so:</h5>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Land</th>
+<th>BIP_Mio</th>
+<th>Anteil</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Österreich</td>
+<td>447710</td>
+<td>5.5</td>
+</tr>
+<tr class="even">
+<td>Deutschland</td>
+<td>3867050</td>
+<td>47.3</td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+</div>
+</div>
+<ol start="5" type="1">
 <li><strong>Konsistente Bezeichnungen:</strong> Achtet auf einheitliche Schreibweisen, besonders bei Kategorien (z.B. immer “CDU” und nicht mal “CDU” und mal “Christlich Demokratische Union”).</li>
+</ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Was heißt das?">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Was heißt das?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Für Datawrapper sind “SPÖ” und “Sozialdemokratische Partei” zwei komplett unterschiedliche Dinge. Achtet darauf, dass gleiche Dinge immer exakt gleich geschrieben werden, sonst bekommt ihr ungewollt neue Kategorien in eurer Grafik.</p>
+<section id="so-nicht-4" class="level5">
+<h5 class="anchored" data-anchor-id="so-nicht-4">So nicht!</h5>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Partei</th>
+<th>Stimmen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SPÖ</td>
+<td>1000</td>
+</tr>
+<tr class="even">
+<td>OVP</td>
+<td>1200</td>
+</tr>
+<tr class="odd">
+<td>SPOE</td>
+<td>500</td>
+</tr>
+<tr class="even">
+<td>ÖVP</td>
+<td>800</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sondern-so-3" class="level5">
+<h5 class="anchored" data-anchor-id="sondern-so-3">Sondern so:</h5>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Partei</th>
+<th>Stimmen</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>SPÖ</td>
+<td>1500</td>
+</tr>
+<tr class="even">
+<td>ÖVP</td>
+<td>2000</td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+</div>
+</div>
+<ol start="6" type="1">
 <li><strong>Lange vs.&nbsp;Breite Daten:</strong> Für die meisten Diagramme (insbesondere Linien- und Balkendiagramme über die Zeit) bevorzugt Datawrapper ein “langes” Datenformat anstelle eines “breiten”.</li>
 </ol>
+<div class="callout callout-style-default callout-note callout-titled" title="Was heißt das?">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Was heißt das?
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Das ist ein wichtiges Konzept. Stellt euch vor, ihr habt Verkaufszahlen für mehrere Produkte über mehrere Jahre.</p>
+<p><strong>“Breite Daten”</strong> haben für jedes Jahr eine eigene Spalte. Das ist oft unpraktisch, aber für manche Diagrammtypen in Datawrapper (wie z.B. Linien-Diagramme) notwendig. ##### Breit: | Produkt | 2021 | 2022 | 2023 | |—|—|—|—| | Apfel | 100 | 120 | 140 | | Birne | 80 | 85 | 95 |</p>
+<p><strong>“Lange Daten”</strong> haben eine Spalte für die Jahreszahl und eine für den Wert. Das ist flexibler und oft der “ordentlichere” Weg, Daten zu speichern. ##### Lang: | Produkt | Jahr | Verkauft | |—|—|—| | Apfel | 2021 | 100 | | Apfel | 2022 | 120 | | Apfel | 2023 | 140 | | Birne | 2021 | 80 | | Birne | 2022 | 85 | | Birne | 2023 | 95 |</p>
+<p>Unsere Challenge am Ende der Lektion zeigt euch genau, wie ihr von einem Format zum anderen kommt!</p>
+</div>
+</div>
+</div>
 <p>Das beste Format für den Upload ist eine <strong>CSV-Datei</strong> (Comma-Separated Values) oder die direkte Anbindung an ein <strong>Google Sheet</strong>.</p>
 </section>
 <section id="wie-lade-ich-daten-in-datawrapper-hoch" class="level2">
@@ -301,7 +585,7 @@ So nicht!
 <hr>
 </section>
 <section id="challenge-daten-aus-einem-pdf-retten" class="level2">
-<h2 class="anchored" data-anchor-id="challenge-daten-aus-einem-pdf-retten">🏆 Challenge: Daten aus einem PDF retten</h2>
+<h2 class="anchored" data-anchor-id="challenge-daten-aus-einem-pdf-retten">Challenge: Daten aus einem PDF retten</h2>
 <p>Jetzt seid ihr dran! Eine der häufigsten und manchmal frustrierendsten Aufgaben im Datenjournalismus ist es, interessante Daten aus PDF-Dokumenten zu befreien.</p>
 <p><strong>Euer Ziel:</strong> Eine einfache Tabelle aus einem PDF-Bericht in Datawrapper visualisieren.</p>
 <p><strong>Das Problem:</strong> PDFs sind oft “Datengräber”. Man kann die Tabellen zwar sehen, aber nur schwer herauskopieren. Beim direkten Kopieren geht oft die Tabellenstruktur kaputt, Zahlen werden als Text erkannt oder es entstehen Fehler.</p>
@@ -312,9 +596,25 @@ So nicht!
 <li><p><strong>Daten in Google Sheets übertragen:</strong></p>
 <ul>
 <li><p>Öffnet ein neues Google Sheet (z.B. mit <a href="https://sheet.new" target="_blank">sheet.new</a>).</p></li>
-<li><p>Versucht, die Tabelle aus dem PDF zu kopieren und in das Sheet einzufügen. Ihr werdet wahrscheinlich sehen, dass das Ergebnis unsauber ist. ::: {.callout-note title=“Pro-Tipp: KI zu Hilfe nehmen” collapse=“true”} Das manuelle Abtippen ist mühsam und fehleranfällig. Moderne KI-Tools können euch hier enorm helfen!</p>
+<li><p>Versucht, die Tabelle aus dem PDF zu kopieren und in das Sheet einzufügen. Ihr werdet wahrscheinlich sehen, dass das Ergebnis unsauber ist.</p></li>
+<li><div class="callout callout-style-default callout-note callout-titled" title="Pro-Tipp: KI zu Hilfe nehmen">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Pro-Tipp: KI zu Hilfe nehmen
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Das manuelle Abtippen ist mühsam und fehleranfällig. Moderne KI-Tools können euch hier enorm helfen!</p>
 <p>Tools wie ChatGPT, Claude oder Gemini können unstrukturierte Daten aus PDFs oft erstaunlich gut in saubere Tabellen umwandeln. Probiert es aus: Kopiert den unsauberen Text aus dem PDF und bittet die KI, daraus eine CSV-formatierte Tabelle zu erstellen. Das kann euch sehr viel Zeit sparen.</p>
-<p><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXduZ3k1cWE0ZnY4aXAxYWUxeGZxcXpjZ2RlczhvYmd6bGd6aXlycyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tczJoRU7XwBS8/giphy.gif" class="img-fluid"> :::</p></li>
+<p><img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXduZ3k1cWE0ZnY4aXAxYWUxeGZxcXpjZ2RlczhvYmd6bGd6aXlycyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tczJoRU7XwBS8/giphy.gif" class="img-fluid"></p>
+</div>
+</div>
+</div></li>
 <li><p><strong>Der eigentliche Job:</strong> Bereinigt die Daten manuell. Das bedeutet, die Werte von Hand in die richtigen Zellen zu tippen, sodass ihr eine saubere, strukturierte Tabelle habt. Achtet darauf, die Prozentzeichen (<code>%</code>) zu entfernen, damit Datawrapper die Werte als Zahlen erkennt. Ihr solltet drei Spalten haben: <code>Grund</code>, <code>2019</code> und <code>2023</code>.</p></li>
 </ul></li>
 <li><p><strong>Mit Datawrapper verknüpfen (Der wichtigste Schritt!):</strong></p>

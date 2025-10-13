@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Chart & Chill"
+  title: "Chart & Chill 📊"
   navbar:
     left:
       - href: index.qmd
