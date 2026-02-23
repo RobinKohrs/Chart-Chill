@@ -10,6 +10,8 @@ website:
         text: "Startseite"
       - href: lektionen.qmd
         text: "Lektionen"
+      - href: nonnegotiables.qmd
+        text: "Non Negotiables😬"
       - href: galerie.qmd
         text: "Galerie"
       - href: ueber.qmd

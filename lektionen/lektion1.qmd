@@ -1,6 +1,6 @@
 ---
 title: "Chart & Chill Vol. 1"
-description: "Was sind Daten und wie bekomme ich sie in Datawrapper"
+description: "**Was sind Daten und wie bekomme ich sie in Datawrapper**"
 author: "Robin"
 date: "2025-10-13"
 image: "/images/lektion1/csv.png"

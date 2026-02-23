@@ -1,0 +1,38 @@
+---
+title: "Non-Negotiables"
+format: html
+---
+
+![](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDlmOHUxY3Byc2dwdjFkMzhzMm9qZGh2cXRob3o4dWdqenQxNnQ2NiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/F8UNUrGwyToeXorAYF/giphy.gif)
+
+# Wichtige Tipps:
+
+- Immer schauen, wie es auf dem Handy ausschaut!
+
+- Nicht zu viele Farben verwenden. 
+
+- Grafiken leiber aufteilen als zu viele Informationen in eine Geben
+
+# Layout
+
+In Schritt  kann man in allen Datawrapper-Grafiken das "Layout" auswählen. Das sind die Basic-Styles für die Grafiken
+
+Wir sind gerade dabei die Layouts von <span style="color: #7758EF; text-align: center; font-weight: bold;">alt</span> auf <span style="color: #F93C63; text-align: center; font-weight: bold;">neu</span> umzustellen.
+
+![](/images/misc/layout.png)
+
+## Alt
+
+- Hatte oben links in der Ecke diesen Schwarzen Knicks
+
+![](/images/misc/knicks.png)
+- Dadurch haben wir insgesamt 40px in der Breite verloren was besonders auf Handy sehr schmerzhaft ist
+
+
+## Neu
+
+- Kein Hackerl
+
+- Durchsichtig
+
+

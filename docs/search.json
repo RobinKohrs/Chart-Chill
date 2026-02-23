@@ -18,42 +18,42 @@
     "href": "index.html",
     "title": "Willkommen bei Chart & Chill",
     "section": "",
-    "text": "Dies ist eine Website zum Erlernen von Datawrapper.\nDatawrapper ist ein Online-Tool, das ihr am besten auf einem Desktop-Computer verwendet. Ihr könnt es unter app.datawrapper.de aufrufen.\nFür die Zugangsdaten (Benutzername und Passwort) schreibt uns bitte eine E-Mail an datenjournalismus@derstandard.at. Bei sonstigen Fragen könnt ihr euch ebenfalls an uns wenden.\nFür schnelle Hilfe und Austausch gibt es auch unsere Datawrapper-Hilfe Teams-Gruppe."
+    "text": "Dies ist eine Website zum Erlernen von Datawrapper und wie wir es am Standard verwenden!\nDatawrapper ist ein Online-Tool, das ihr am besten auf einem Desktop-Computer verwendet. Ihr könnt es unter app.datawrapper.de aufrufen.\nFür die Zugangsdaten (Benutzername und Passwort) schreibt uns bitte eine E-Mail an datenjournalismus@derstandard.at. Bei sonstigen Fragen könnt ihr euch ebenfalls an uns wenden.\nFür schnelle Hilfe und Austausch gibt es auch unsere Datawrapper-Hilfe Teams-Gruppe.\n\n\n\n\n\n\nTipFür Jede Grafik Wichtig\n\n\n\nFür die wichtigsten Datawrapper-Tipps bitte direkt hier schauen\n\n\n\n\n\n\n\n\nTipDatawrapper-Academy\n\n\n\nUnd für Alle, die noch viel tiefer eintauchen möchten, gibt es sehr viele sehr gute Artikel von Datawrapper selber in der Datawrapper Academy"
   },
   {
     "objectID": "lektionen.html",
     "href": "lektionen.html",
     "title": "Lektionen",
     "section": "",
-    "text": "Hier findet ihr eine Übersicht aller Lektionen. Wählt eine aus, um zu beginnen.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nChart & Chill Vol. 1\n\n\nWas sind Daten und wie bekomme ich sie in Datawrapper\n\n\n\nRobin\n\n\nOct 13, 2025\n\n\n\n\n\n\nNo matching items"
+    "text": "Hier findet ihr eine Übersicht aller Lektionen. Wählt eine aus, um zu beginnen.\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nChart & Chill Vol. 1\n\n\nWas sind Daten und wie bekomme ich sie in Datawrapper\n\n\n\nRobin\n\n\nOct 13, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nChart & Chill Vol. 2\n\n\nLocator-Karten in Datawrapper\n\n\n\nRobin\n\n\nFeb 12, 2026\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lektionen/lektion1.html",
     "href": "lektionen/lektion1.html",
     "title": "Chart & Chill Vol. 1",
     "section": "",
-    "text": "TL;DR: Der beste Weg für Daten\n\n\n\n\n\n\nGoogle Sheets ist die beste Methode: Der einfachste und flexibelste Weg, um Daten in Datawrapper zu bekommen, besonders bei der Zusammenarbeit im Team und bei sich ändernden Daten.\nPro-Tipp: Gebt sheet.new in die Adresszeile eures Browsers ein, um sofort ein neues Google Sheet zu erstellen.\nVerbunden Zellen: Keine verbundenen Zellen in der ersten Zeile.\nSpaltenüberschriften: Jede Spalte muss eine eindeutige Überschrift haben.\nJede Zeile ist ein Datenpunkt: Jede Zeile muss eine eindeutige Beobachtung repräsentieren.\nMehr erfahren: Eine detaillierte Übersicht (mit Videos!) aller Upload-Möglichkeiten findet ihr in diesem Artikel der Datawrapper Academy."
+    "text": "ImportantTL;DR: Der beste Weg für Daten\n\n\n\n\n\n\nGoogle Sheets ist die beste Methode: Der einfachste und flexibelste Weg, um Daten in Datawrapper zu bekommen, besonders bei der Zusammenarbeit im Team und bei sich ändernden Daten.\nPro-Tipp: Gebt sheet.new in die Adresszeile eures Browsers ein, um sofort ein neues Google Sheet zu erstellen.\nVerbunden Zellen: Keine verbundenen Zellen in der ersten Zeile.\nSpaltenüberschriften: Jede Spalte muss eine eindeutige Überschrift haben.\nJede Zeile ist ein Datenpunkt: Jede Zeile muss eine eindeutige Beobachtung repräsentieren.\nMehr erfahren: Eine detaillierte Übersicht (mit Videos!) aller Upload-Möglichkeiten findet ihr in diesem Artikel der Datawrapper Academy."
   },
   {
     "objectID": "lektionen/lektion1.html#was-sind-daten",
     "href": "lektionen/lektion1.html#was-sind-daten",
     "title": "Chart & Chill Vol. 1",
     "section": "Was sind Daten?",
-    "text": "Was sind Daten?\nIm einfachsten Sinne sind Daten Sammlungen von Informationen. Für uns als Journalist:innen können das ganz unterschiedliche Dinge sein:\n\nTabellarische Daten: Das ist die häufigste Form. Denkt an Excel-Tabellen oder Google Sheets. Jede Zeile ist ein Datensatz (z.B. ein Land, eine Person) und jede Spalte ist ein Merkmal (z.B. Bevölkerungszahl, Alter).\nGeodaten: Diese Daten haben einen räumlichen Bezug, z.B. die Koordinaten von Städten oder die Umrisse von Ländern. Datawrapper kann hervorragend damit umgehen.\nTextdaten: Auch unstrukturierte Texte können Daten sein, z.B. Reden von Politiker:innen oder Tweets. Diese müssen aber oft erst aufbereitet werden.\n\n\n\n\n\n\n\nTypische Datenformate\n\n\n\n\nCSV (.csv): Comma-Separated Values. Das einfachste und universellste Format für Tabellendaten. Jede Tabellenkalkulation kann das exportieren. Wir werden es fast immer benutzen.\nExcel (.xlsx): Das bekannte Excel-Format. Datawrapper kann das zwar importieren, aber CSV ist oft weniger fehleranfällig.\nJSON (.json): JavaScript Object Notation. Ein flexibles Format, das oft von APIs (Programmierschnittstellen) im Web verwendet wird.\nGeoJSON (.geojson) / Shapefiles (.shp): Standardformate für Geodaten. Wenn ihr Karten machen wollt, werdet ihr diesen Formaten begegnen. Datawrapper kann GeoJSONs direkt verarbeiten."
+    "text": "Was sind Daten?\nIm einfachsten Sinne sind Daten Sammlungen von Informationen. Für uns als Journalist:innen können das ganz unterschiedliche Dinge sein:\n\nTabellarische Daten: Das ist die häufigste Form. Denkt an Excel-Tabellen oder Google Sheets. Jede Zeile ist ein Datensatz (z.B. ein Land, eine Person) und jede Spalte ist ein Merkmal (z.B. Bevölkerungszahl, Alter).\nGeodaten: Diese Daten haben einen räumlichen Bezug, z.B. die Koordinaten von Städten oder die Umrisse von Ländern. Datawrapper kann hervorragend damit umgehen.\nTextdaten: Auch unstrukturierte Texte können Daten sein, z.B. Reden von Politiker:innen oder Tweets. Diese müssen aber oft erst aufbereitet werden.\n\n\n\n\n\n\n\nNoteTypische Datenformate\n\n\n\n\nCSV (.csv): Comma-Separated Values. Das einfachste und universellste Format für Tabellendaten. Jede Tabellenkalkulation kann das exportieren. Wir werden es fast immer benutzen.\nExcel (.xlsx): Das bekannte Excel-Format. Datawrapper kann das zwar importieren, aber CSV ist oft weniger fehleranfällig.\nJSON (.json): JavaScript Object Notation. Ein flexibles Format, das oft von APIs (Programmierschnittstellen) im Web verwendet wird.\nGeoJSON (.geojson) / Shapefiles (.shp): Standardformate für Geodaten. Wenn ihr Karten machen wollt, werdet ihr diesen Formaten begegnen. Datawrapper kann GeoJSONs direkt verarbeiten."
   },
   {
     "objectID": "lektionen/lektion1.html#wo-finde-ich-daten",
     "href": "lektionen/lektion1.html#wo-finde-ich-daten",
     "title": "Chart & Chill Vol. 1",
     "section": "Wo finde ich Daten?",
-    "text": "Wo finde ich Daten?\nGute Daten sind die Grundlage jeder guten Datenvisualisierung. Hier sind einige Anlaufstellen:\n\nStatistische Ämter: Destatis in Deutschland, Eurostat für die EU, die Weltbank für globale Daten.\nOpen-Data-Portale: Viele Städte und Länder bieten mittlerweile Open-Data-Portale an (z.B. data.gv.at, opendata.swiss).\n\n\n\n\n\n\n\nCsvs sind die häufigsten Datenformate\n\n\n\n\n\n\n\n\n\n\nWissenschaftliche Studien: Forschungsinstitute veröffentlichen oft ihre Datensätze.\nEigene Recherche: Manchmal müsst ihr die Daten selbst erheben, z.B. durch Umfragen oder das systematische Sammeln von Informationen."
+    "text": "Wo finde ich Daten?\nGute Daten sind die Grundlage jeder guten Datenvisualisierung. Hier sind einige Anlaufstellen:\n\nStatistische Ämter: Destatis in Deutschland, Eurostat für die EU, die Weltbank für globale Daten.\nOpen-Data-Portale: Viele Städte und Länder bieten mittlerweile Open-Data-Portale an (z.B. data.gv.at, opendata.swiss).\n\n\n\n\n\n\n\nNoteCsvs sind die häufigsten Datenformate\n\n\n\n\n\n\n\n\n\n\nWissenschaftliche Studien: Forschungsinstitute veröffentlichen oft ihre Datensätze.\nEigene Recherche: Manchmal müsst ihr die Daten selbst erheben, z.B. durch Umfragen oder das systematische Sammeln von Informationen."
   },
   {
     "objectID": "lektionen/lektion1.html#wie-bereite-ich-daten-für-datawrapper-vor-best-practices",
     "href": "lektionen/lektion1.html#wie-bereite-ich-daten-für-datawrapper-vor-best-practices",
     "title": "Chart & Chill Vol. 1",
     "section": "Wie bereite ich Daten für Datawrapper vor? (Best Practices)",
-    "text": "Wie bereite ich Daten für Datawrapper vor? (Best Practices)\nDatawrapper mag “saubere” und “tidy” (aufgeräumte) Daten. Je besser eure Daten vorbereitet sind, desto schneller und einfacher ist die Visualisierung. Hier sind die wichtigsten Regeln, die ihr immer beachten solltet:\n\nEin Header, eine Zeile: Die allererste Zeile muss die eindeutigen Spaltenüberschriften enthalten. Keine leeren Zeilen darüber, keine verbundenen Zellen.\n\n\n\n\n\n\n\nSo nicht!\n\n\n\n\n\n\n\n\n\n\nEin Datensatz pro Zeile: Jede Zeile sollte eine einzelne Beobachtung repräsentieren (z.B. ein Land, ein Jahr, eine Person).\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nJede Zeile muss eine vollständige Information sein. Informationen zu einem Datenpunkt (z.B. zu Österreich 2023) dürfen nicht über mehrere Zeilen verteilt sein.\n\nSo nicht!\n\n\n\nLand\nWert\n\n\n\n\nÖsterreich\n\n\n\n\n9.100.000\n\n\nDeutschland\n\n\n\n\n84.400.000\n\n\n\n\n\nSondern so:\n\n\n\nLand\nEinwohner\n\n\n\n\nÖsterreich\n9100000\n\n\nDeutschland\n84400000\n\n\n\n\n\n\n\n\nEin Merkmal pro Spalte: Jede Spalte sollte genau eine Variable enthalten (z.B. Einwohner, BIP, Name). Mischt keine unterschiedlichen Informationstypen in einer Spalte.\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nVermischt keine unterschiedlichen Informationen in einer einzigen Zelle. Datawrapper kann “Wien, 1. Bezirk” nicht als Stadt und Bezirk gleichzeitig verstehen. Trennt diese Informationen in eigene Spalten auf.\n\nSo nicht!\n\n\n\nOrt\nEinwohner\n\n\n\n\nWien, 1. Bezirk\n16.033\n\n\nWien, 2. Bezirk\n108.433\n\n\n\n\n\nSondern so:\n\n\n\nStadt\nBezirk\nEinwohner\n\n\n\n\nWien\n1\n16033\n\n\nWien\n2\n108433\n\n\n\n\n\n\n\n\nKeine Formatierungen: Datawrapper ignoriert fette Schrift, Farben oder kursive Buchstaben. Wichtiger ist der Inhalt. Entfernt auch Tausendertrennzeichen (wie . oder ,) aus Zahlen. 1000000 ist gut, 1.000.000 ist schlecht. Dezimaltrennzeichen sollten ein Punkt (.) sein.\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nDatawrapper braucht “rohe” Zahlen. Prozentzeichen, Währungssymbole, Tausenderpunkte oder Kommas machen aus einer Zahl einen Text und unbrauchbar für die Visualisierung. Formatierungen wie Fett- oder Kursivdruck werden ignoriert.\n\nSo nicht!\n\n\n\nLand\nBIP (in Mio.)\nAnteil\n\n\n\n\nÖsterreich\n€ 447.710\n5,5%\n\n\nDeutschland\n€ 3.867.050\n47,3%\n\n\n\n\n\nSondern so:\n\n\n\nLand\nBIP_Mio\nAnteil\n\n\n\n\nÖsterreich\n447710\n5.5\n\n\nDeutschland\n3867050\n47.3\n\n\n\n\n\n\n\n\nKonsistente Bezeichnungen: Achtet auf einheitliche Schreibweisen, besonders bei Kategorien (z.B. immer “CDU” und nicht mal “CDU” und mal “Christlich Demokratische Union”).\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nFür Datawrapper sind “SPÖ” und “Sozialdemokratische Partei” zwei komplett unterschiedliche Dinge. Achtet darauf, dass gleiche Dinge immer exakt gleich geschrieben werden, sonst bekommt ihr ungewollt neue Kategorien in eurer Grafik.\n\nSo nicht!\n\n\n\nPartei\nStimmen\n\n\n\n\nSPÖ\n1000\n\n\nOVP\n1200\n\n\nSPOE\n500\n\n\nÖVP\n800\n\n\n\n\n\nSondern so:\n\n\n\nPartei\nStimmen\n\n\n\n\nSPÖ\n1500\n\n\nÖVP\n2000\n\n\n\n\n\n\n\n\nLange vs. Breite Daten: Für die meisten Diagramme (insbesondere Linien- und Balkendiagramme über die Zeit) bevorzugt Datawrapper ein “langes” Datenformat anstelle eines “breiten”.\n\n\n\n\n\n\n\nWas heißt das?\n\n\n\n\n\nDas ist ein wichtiges Konzept. Stellt euch vor, ihr habt Verkaufszahlen für mehrere Produkte über mehrere Jahre.\n“Breite Daten” haben für jedes Jahr eine eigene Spalte. Das ist oft unpraktisch, aber für manche Diagrammtypen in Datawrapper (wie z.B. Linien-Diagramme) notwendig.\nBreit:\n\n\n\nProdukt\n2021\n2022\n2023\n\n\n\n\nApfel\n100\n120\n140\n\n\nBirne\n80\n85\n95\n\n\n\n“Lange Daten” haben eine Spalte für die Jahreszahl und eine für den Wert. Das ist flexibler und oft der “ordentlichere” Weg, Daten zu speichern.\nLang:\n\n\n\nProdukt\nJahr\nVerkauft\n\n\n\n\nApfel\n2021\n100\n\n\nApfel\n2022\n120\n\n\nApfel\n2023\n140\n\n\nBirne\n2021\n80\n\n\nBirne\n2022\n85\n\n\nBirne\n2023\n95\n\n\n\nWelches Format das richtige ist, hängt stark vom Diagrammtyp ab, den ihr erstellen wollt. Ein Liniendiagramm in Datawrapper zum Beispiel erwartet für jede Linie eine eigene Spalte. Die erste Spalte ist dabei die X-Achse (oft eine Zeitangabe).\nBeispiel für Datawrapper-Liniendiagramm (Breit):\n\n\n\nJahr\nApfel\nBirne\n\n\n\n\n2021\n100\n80\n\n\n2022\n120\n85\n\n\n2023\n140\n95"
+    "text": "Wie bereite ich Daten für Datawrapper vor? (Best Practices)\nDatawrapper mag “saubere” und “tidy” (aufgeräumte) Daten. Je besser eure Daten vorbereitet sind, desto schneller und einfacher ist die Visualisierung. Hier sind die wichtigsten Regeln, die ihr immer beachten solltet:\n\nEin Header, eine Zeile: Die allererste Zeile muss die eindeutigen Spaltenüberschriften enthalten. Keine leeren Zeilen darüber, keine verbundenen Zellen.\n\n\n\n\n\n\n\nNoteSo nicht!\n\n\n\n\n\n\n\n\n\n\nEin Datensatz pro Zeile: Jede Zeile sollte eine einzelne Beobachtung repräsentieren (z.B. ein Land, ein Jahr, eine Person).\n\n\n\n\n\n\n\nNoteWas heißt das?\n\n\n\n\n\nJede Zeile muss eine vollständige Information sein. Informationen zu einem Datenpunkt (z.B. zu Österreich 2023) dürfen nicht über mehrere Zeilen verteilt sein.\n\nSo nicht!\n\n\n\nLand\nWert\n\n\n\n\nÖsterreich\n\n\n\n\n9.100.000\n\n\nDeutschland\n\n\n\n\n84.400.000\n\n\n\n\n\nSondern so:\n\n\n\nLand\nEinwohner\n\n\n\n\nÖsterreich\n9100000\n\n\nDeutschland\n84400000\n\n\n\n\n\n\n\n\nEin Merkmal pro Spalte: Jede Spalte sollte genau eine Variable enthalten (z.B. Einwohner, BIP, Name). Mischt keine unterschiedlichen Informationstypen in einer Spalte.\n\n\n\n\n\n\n\nNoteWas heißt das?\n\n\n\n\n\nVermischt keine unterschiedlichen Informationen in einer einzigen Zelle. Datawrapper kann “Wien, 1. Bezirk” nicht als Stadt und Bezirk gleichzeitig verstehen. Trennt diese Informationen in eigene Spalten auf.\n\nSo nicht!\n\n\n\nOrt\nEinwohner\n\n\n\n\nWien, 1. Bezirk\n16.033\n\n\nWien, 2. Bezirk\n108.433\n\n\n\n\n\nSondern so:\n\n\n\nStadt\nBezirk\nEinwohner\n\n\n\n\nWien\n1\n16033\n\n\nWien\n2\n108433\n\n\n\n\n\n\n\n\nKeine Formatierungen: Datawrapper ignoriert fette Schrift, Farben oder kursive Buchstaben. Wichtiger ist der Inhalt. Entfernt auch Tausendertrennzeichen (wie . oder ,) aus Zahlen. 1000000 ist gut, 1.000.000 ist schlecht. Dezimaltrennzeichen sollten ein Punkt (.) sein.\n\n\n\n\n\n\n\nNoteWas heißt das?\n\n\n\n\n\nDatawrapper braucht “rohe” Zahlen. Prozentzeichen, Währungssymbole, Tausenderpunkte oder Kommas machen aus einer Zahl einen Text und unbrauchbar für die Visualisierung. Formatierungen wie Fett- oder Kursivdruck werden ignoriert.\n\nSo nicht!\n\n\n\nLand\nBIP (in Mio.)\nAnteil\n\n\n\n\nÖsterreich\n€ 447.710\n5,5%\n\n\nDeutschland\n€ 3.867.050\n47,3%\n\n\n\n\n\nSondern so:\n\n\n\nLand\nBIP_Mio\nAnteil\n\n\n\n\nÖsterreich\n447710\n5.5\n\n\nDeutschland\n3867050\n47.3\n\n\n\n\n\n\n\n\nKonsistente Bezeichnungen: Achtet auf einheitliche Schreibweisen, besonders bei Kategorien (z.B. immer “CDU” und nicht mal “CDU” und mal “Christlich Demokratische Union”).\n\n\n\n\n\n\n\nNoteWas heißt das?\n\n\n\n\n\nFür Datawrapper sind “SPÖ” und “Sozialdemokratische Partei” zwei komplett unterschiedliche Dinge. Achtet darauf, dass gleiche Dinge immer exakt gleich geschrieben werden, sonst bekommt ihr ungewollt neue Kategorien in eurer Grafik.\n\nSo nicht!\n\n\n\nPartei\nStimmen\n\n\n\n\nSPÖ\n1000\n\n\nOVP\n1200\n\n\nSPOE\n500\n\n\nÖVP\n800\n\n\n\n\n\nSondern so:\n\n\n\nPartei\nStimmen\n\n\n\n\nSPÖ\n1500\n\n\nÖVP\n2000\n\n\n\n\n\n\n\n\nLange vs. Breite Daten: Für die meisten Diagramme (insbesondere Linien- und Balkendiagramme über die Zeit) bevorzugt Datawrapper ein “langes” Datenformat anstelle eines “breiten”.\n\n\n\n\n\n\n\nNoteWas heißt das?\n\n\n\n\n\nDas ist ein wichtiges Konzept. Stellt euch vor, ihr habt Verkaufszahlen für mehrere Produkte über mehrere Jahre.\n“Breite Daten” haben für jedes Jahr eine eigene Spalte. Das ist oft unpraktisch, aber für manche Diagrammtypen in Datawrapper (wie z.B. Linien-Diagramme) notwendig.\nBreit:\n\n\n\nProdukt\n2021\n2022\n2023\n\n\n\n\nApfel\n100\n120\n140\n\n\nBirne\n80\n85\n95\n\n\n\n“Lange Daten” haben eine Spalte für die Jahreszahl und eine für den Wert. Das ist flexibler und oft der “ordentlichere” Weg, Daten zu speichern.\nLang:\n\n\n\nProdukt\nJahr\nVerkauft\n\n\n\n\nApfel\n2021\n100\n\n\nApfel\n2022\n120\n\n\nApfel\n2023\n140\n\n\nBirne\n2021\n80\n\n\nBirne\n2022\n85\n\n\nBirne\n2023\n95\n\n\n\nWelches Format das richtige ist, hängt stark vom Diagrammtyp ab, den ihr erstellen wollt. Ein Liniendiagramm in Datawrapper zum Beispiel erwartet für jede Linie eine eigene Spalte. Die erste Spalte ist dabei die X-Achse (oft eine Zeitangabe).\nBeispiel für Datawrapper-Liniendiagramm (Breit):\n\n\n\nJahr\nApfel\nBirne\n\n\n\n\n2021\n100\n80\n\n\n2022\n120\n85\n\n\n2023\n140\n95"
   },
   {
     "objectID": "lektionen/lektion1.html#wie-lade-ich-daten-in-datawrapper-hoch",
@@ -67,7 +67,7 @@
     "href": "lektionen/lektion1.html#challenge-daten-aus-einem-pdf-retten",
     "title": "Chart & Chill Vol. 1",
     "section": "Challenge: Daten aus einem PDF retten",
-    "text": "Challenge: Daten aus einem PDF retten\nJetzt seid ihr dran! Eine der häufigsten und manchmal frustrierendsten Aufgaben im Datenjournalismus ist es, interessante Daten aus PDF-Dokumenten zu befreien.\nEuer Ziel: Eine einfache Tabelle aus einem PDF-Bericht in Datawrapper visualisieren.\nDas Problem: PDFs sind oft “Datengräber”. Man kann die Tabellen zwar sehen, aber nur schwer herauskopieren. Beim direkten Kopieren geht oft die Tabellenstruktur kaputt, Zahlen werden als Text erkannt oder es entstehen Fehler.\nEure Aufgabe:\n\nBericht finden: Öffnet den Kernbericht der Studierenden-Sozialerhebung 2023.\nTabelle auswählen: Sucht euch eine einfache Tabelle aus dem Bericht aus. Ein gutes Beispiel ist Tabelle 154: “Gründe für die derzeitigen finanziellen Schwierigkeiten 2019 und 2023”. Sie ist übersichtlich und hat nur wenige Spalten.\nDaten in Google Sheets übertragen:\n\nÖffnet ein neues Google Sheet (z.B. mit sheet.new).\nVersucht, die Tabelle aus dem PDF zu kopieren und in das Sheet einzufügen. Ihr werdet wahrscheinlich sehen, dass das Ergebnis unsauber ist.\n\n\n\n\n\n\nPro-Tipp: KI zu Hilfe nehmen\n\n\n\n\n\nDas manuelle Abtippen ist mühsam und fehleranfällig. Moderne KI-Tools können euch hier enorm helfen!\nTools wie ChatGPT, Claude oder Gemini können unstrukturierte Daten aus PDFs oft erstaunlich gut in saubere Tabellen umwandeln. Probiert es aus: Kopiert den unsauberen Text aus dem PDF und bittet die KI, daraus eine CSV-formatierte Tabelle zu erstellen. Das kann euch sehr viel Zeit sparen.\n\n\n\n\nDer eigentliche Job: Bereinigt die Daten manuell. Das bedeutet, die Werte von Hand in die richtigen Zellen zu tippen, sodass ihr eine saubere, strukturierte Tabelle habt. Achtet darauf, die Prozentzeichen (%) zu entfernen, damit Datawrapper die Werte als Zahlen erkennt. Ihr solltet drei Spalten haben: Grund, 2019 und 2023.\n\n\n\n\n\n\nWenn alles in einer Spalte ist…\n\n\n\n\n\n\n\n\n\n\nMit Datawrapper verknüpfen (Der wichtigste Schritt!):\n\nJetzt kommt der entscheidende Teil, den wir gelernt haben: Wir kopieren die Daten nicht, wir verknüpfen sie direkt!\nKlickt in eurem sauberen Google Sheet oben rechts auf den grünen “Teilen”-Button.\nÄndert im Pop-up-Fenster den “Allgemeinen Zugriff” auf “Jeder, der über den Link verfügt”.\nKlickt auf “Link kopieren”.\nFügt diesen Link in Datawrapper in Schritt 1 bei der Option “Connect Google Sheet” ein.\nDas war’s! Jetzt ist eure Visualisierung direkt mit dem Google Sheet verbunden. Wenn ihr später einen Tippfehler im Sheet korrigiert, könnt ihr die Grafik in Datawrapper mit einem Klick aktualisieren, ohne alles neu hochladen zu müssen.\n(Erstellt eine Visualisierung. Ein gruppiertes Säulendiagramm wäre hier eine gute Wahl, um die Veränderungen von 2019 zu 2023 zu zeigen.)"
+    "text": "Challenge: Daten aus einem PDF retten\nJetzt seid ihr dran! Eine der häufigsten und manchmal frustrierendsten Aufgaben im Datenjournalismus ist es, interessante Daten aus PDF-Dokumenten zu befreien.\nEuer Ziel: Eine einfache Tabelle aus einem PDF-Bericht in Datawrapper visualisieren.\nDas Problem: PDFs sind oft “Datengräber”. Man kann die Tabellen zwar sehen, aber nur schwer herauskopieren. Beim direkten Kopieren geht oft die Tabellenstruktur kaputt, Zahlen werden als Text erkannt oder es entstehen Fehler.\nEure Aufgabe:\n\nBericht finden: Öffnet den Kernbericht der Studierenden-Sozialerhebung 2023.\nTabelle auswählen: Sucht euch eine einfache Tabelle aus dem Bericht aus. Ein gutes Beispiel ist Tabelle 154: “Gründe für die derzeitigen finanziellen Schwierigkeiten 2019 und 2023”. Sie ist übersichtlich und hat nur wenige Spalten.\nDaten in Google Sheets übertragen:\n\nÖffnet ein neues Google Sheet (z.B. mit sheet.new).\nVersucht, die Tabelle aus dem PDF zu kopieren und in das Sheet einzufügen. Ihr werdet wahrscheinlich sehen, dass das Ergebnis unsauber ist.\n\n\n\n\n\n\nNotePro-Tipp: KI zu Hilfe nehmen\n\n\n\n\n\nDas manuelle Abtippen ist mühsam und fehleranfällig. Moderne KI-Tools können euch hier enorm helfen!\nTools wie ChatGPT, Claude oder Gemini können unstrukturierte Daten aus PDFs oft erstaunlich gut in saubere Tabellen umwandeln. Probiert es aus: Kopiert den unsauberen Text aus dem PDF und bittet die KI, daraus eine CSV-formatierte Tabelle zu erstellen. Das kann euch sehr viel Zeit sparen.\n\n\n\n\nDer eigentliche Job: Bereinigt die Daten manuell. Das bedeutet, die Werte von Hand in die richtigen Zellen zu tippen, sodass ihr eine saubere, strukturierte Tabelle habt. Achtet darauf, die Prozentzeichen (%) zu entfernen, damit Datawrapper die Werte als Zahlen erkennt. Ihr solltet drei Spalten haben: Grund, 2019 und 2023.\n\n\n\n\n\n\nNoteWenn alles in einer Spalte ist…\n\n\n\n\n\n\n\n\n\n\nMit Datawrapper verknüpfen (Der wichtigste Schritt!):\n\nJetzt kommt der entscheidende Teil, den wir gelernt haben: Wir kopieren die Daten nicht, wir verknüpfen sie direkt!\nKlickt in eurem sauberen Google Sheet oben rechts auf den grünen “Teilen”-Button.\nÄndert im Pop-up-Fenster den “Allgemeinen Zugriff” auf “Jeder, der über den Link verfügt”.\nKlickt auf “Link kopieren”.\nFügt diesen Link in Datawrapper in Schritt 1 bei der Option “Connect Google Sheet” ein.\nDas war’s! Jetzt ist eure Visualisierung direkt mit dem Google Sheet verbunden. Wenn ihr später einen Tippfehler im Sheet korrigiert, könnt ihr die Grafik in Datawrapper mit einem Klick aktualisieren, ohne alles neu hochladen zu müssen.\n(Erstellt eine Visualisierung. Ein gruppiertes Säulendiagramm wäre hier eine gute Wahl, um die Veränderungen von 2019 zu 2023 zu zeigen.)"
   },
   {
     "objectID": "get-started.html",
@@ -96,5 +96,96 @@
     "title": "About",
     "section": "",
     "text": "This website is for a weekly class on Datawrapper for journalists."
+  },
+  {
+    "objectID": "lektionen/lektion2.html",
+    "href": "lektionen/lektion2.html",
+    "title": "Chart & Chill Vol. 2",
+    "section": "",
+    "text": "TipTLDR\n\n\n\n\n\n\n\nNeue Karte erstellen\n\n\n\n\n\nLocator-Karte auswählen\n\n\n\n\n\nRichtiges Layout auswählen (derzeit: Test)\n\n\n\n\n\nAuf Mobile Ansicht umschalten\n\n\n\n\n\nKartenstil anpassen\n\n\nAuf Globus ändern wenn globale Daten gezeigt werden\n\n\n\n\n\nMarker, Linien und Flächen hinzufügen\n\n\nWenige Farben\nKlare Struktur\n\n\n\n\n\nAuf Desktopansicht testen\n\n\n\n\n\nVeröffentlichen und in Lido einbauen\n\nDen Zum Teilen Link kopieren und in Lido einfügen!"
+  },
+  {
+    "objectID": "lektionen/lektion2.html#in-datawrapper-selbst",
+    "href": "lektionen/lektion2.html#in-datawrapper-selbst",
+    "title": "Chart & Chill Vol. 1",
+    "section": "In Datawrapper selbst:",
+    "text": "In Datawrapper selbst:\n\n\nFür Punkte und Flächen funktioniert das Suchfeld in Datawrapper ähnlich wie Google Maps\nEinfach eingeben und auf Ergebnisvorschläge warten\nGoogle Maps Links können auch kopiert werden!\n\nSowohl von Orten wie hier\nOder man macht einen Rechtklick in Google Maps und kopiert die Koordinaten und fügt sie dann einfach in Datawrapper ein!"
+  },
+  {
+    "objectID": "lektionen/lektion2.html#in-datawrapper-selbst-punkte-und-polygone",
+    "href": "lektionen/lektion2.html#in-datawrapper-selbst-punkte-und-polygone",
+    "title": "Chart & Chill Vol. 1",
+    "section": "In Datawrapper selbst (Punkte und Polygone):",
+    "text": "In Datawrapper selbst (Punkte und Polygone):\n\n\nFür Punkte und Flächen funktioniert das Suchfeld in Datawrapper ähnlich wie Google Maps\nEinfach eingeben und auf Ergebnisvorschläge warten\nGoogle Maps Links können auch kopiert werden!\n\nSowohl von Orten wie hier\nOder man macht einen Rechtklick in Google Maps und kopiert die Koordinaten und fügt sie dann einfach in Datawrapper ein!"
+  },
+  {
+    "objectID": "lektionen/lektion2.html#punnkte-und-flächen-mostly-in-datawrapper-selbst",
+    "href": "lektionen/lektion2.html#punnkte-und-flächen-mostly-in-datawrapper-selbst",
+    "title": "Chart & Chill Vol. 1",
+    "section": "Punnkte und Flächen: (Mostly) In Datawrapper selbst:",
+    "text": "Punnkte und Flächen: (Mostly) In Datawrapper selbst:\n\n\nFür Punkte und Flächen funktioniert das Suchfeld in Datawrapper ähnlich wie Google Maps\nEinfach eingeben und auf Ergebnisvorschläge warten\nSollte es etwas nicht geben: Google Maps Links können auch kopiert werden!\n\nSowohl von Orten wie hier\nOder man macht einen Rechtklick in Google Maps und kopiert die Koordinaten und fügt sie dann einfach in Datawrapper ein!\n\n\n## Linien\n\nLinien können nicht direkt in Datawrapper gezeichnet werden\nSie müssen entwerder bereits als Datei (ein sogenanntes geojson) vorliegen oder selber gezeichnet werden (am einfachsten in geojson.io)"
+  },
+  {
+    "objectID": "lektionen/lektion2.html#geojson.io",
+    "href": "lektionen/lektion2.html#geojson.io",
+    "title": "Chart & Chill Vol. 2",
+    "section": "GEOJSON.IO",
+    "text": "GEOJSON.IO\n\nSehr nützlicher Broser-Editor um Punkte, Flächen und Linien selber zu zeichnen!\nWährend mann die Geometrie auf der Karte zeichnet baut sich rechts der Geojson-Code auf , der dann einfach zu Datawrapper kopiert werden kann. Oder man speichert ihn als geojson und läd ihn dann zu Datawrapper!"
+  },
+  {
+    "objectID": "lektionen/lektion2.html#punkte-und-flächen-mostly-in-datawrapper-selbst",
+    "href": "lektionen/lektion2.html#punkte-und-flächen-mostly-in-datawrapper-selbst",
+    "title": "Chart & Chill Vol. 2",
+    "section": "Punkte und Flächen: (Mostly) In Datawrapper selbst:",
+    "text": "Punkte und Flächen: (Mostly) In Datawrapper selbst:\n\n\nFür Punkte und Flächen funktioniert das Suchfeld in Datawrapper ähnlich wie Google Maps\nEinfach eingeben und auf Ergebnisvorschläge warten\nSollte es etwas nicht geben: Google Maps Links können auch kopiert werden!\n\nSowohl von Orten wie hier\nOder man macht einen Rechtklick in Google Maps und kopiert die Koordinaten und fügt sie dann einfach in Datawrapper ein!"
+  },
+  {
+    "objectID": "lektionen/lektion2.html#linien",
+    "href": "lektionen/lektion2.html#linien",
+    "title": "Chart & Chill Vol. 2",
+    "section": "Linien",
+    "text": "Linien\n\nLinien können nicht direkt in Datawrapper gezeichnet werden\nSie müssen entwerder bereits als Datei (ein sogenanntes geojson) vorliegen oder selber gezeichnet werden (am einfachsten in geojson.io)"
+  },
+  {
+    "objectID": "nonnegotiables.html",
+    "href": "nonnegotiables.html",
+    "title": "Non-Negotiables",
+    "section": "",
+    "text": "These are non negotiables"
+  },
+  {
+    "objectID": "index.html#wichtig",
+    "href": "index.html#wichtig",
+    "title": "Willkommen bei Chart & Chill",
+    "section": "WICHTIG",
+    "text": "WICHTIG\nFür die wichtigsten Datawrapper-Tipps bitte direkt hier schauen"
+  },
+  {
+    "objectID": "nonnegotiables.html#alt",
+    "href": "nonnegotiables.html#alt",
+    "title": "Non-Negotiables",
+    "section": "Alt",
+    "text": "Alt\n\nHatte oben links in der Ecke diesen Schwarzen Knicks\n\n - Dadurch haben wir insgesamt 40px in der Breite verloren was besonders auf Handy sehr schmerzhaft ist"
+  },
+  {
+    "objectID": "nonnegotiables.html#neu",
+    "href": "nonnegotiables.html#neu",
+    "title": "Non-Negotiables",
+    "section": "Neu",
+    "text": "Neu\n\nKein Hackerl\nDurchsichtig"
+  },
+  {
+    "objectID": "lektionen/lektion2.html#das-datenformat-geojson",
+    "href": "lektionen/lektion2.html#das-datenformat-geojson",
+    "title": "Chart & Chill Vol. 2",
+    "section": "Das Datenformat: GEOJSON",
+    "text": "Das Datenformat: GEOJSON\n\nWie excel-Dateien für Grafiken, können für Karten sogenannte geojson-Dateien verwendet werden\nStrukturiertes, vorgegebenes Format für Punkte, Linien und Flächen\n\n\nPunkte\n{\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [13.405, 52.520] \n  },\n  \"properties\": {\n    \"name\": \"Berlin Fernsehturm\"\n  }\n}\n\n\nLinien\n{\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"LineString\",\n    \"coordinates\": [\n      [13.405, 52.520],\n      [13.415, 52.530],\n      [13.425, 52.525]\n    ]\n  },\n  \"properties\": {\n    \"name\": \"Chinesische Mauer\"\n  }\n}\n\n\nFlächen\n{\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Polygon\",\n    \"coordinates\": [\n      [\n        [13.370, 52.515],\n        [13.380, 52.515],\n        [13.380, 52.520],\n        [13.370, 52.520],\n        [13.370, 52.515]\n      ]\n    ]\n  },\n  \"properties\": {\n    \"name\": \"Versorgungsgebiet\"\n  }\n}"
+  },
+  {
+    "objectID": "lektionen/lektion2.html#datenquellen",
+    "href": "lektionen/lektion2.html#datenquellen",
+    "title": "Chart & Chill Vol. 2",
+    "section": "Datenquellen",
+    "text": "Datenquellen\n\ndata.gv.at wie z.B.\n\nDefibrillatoren Standorte in Wien\nChristbaumsammelstenn in Wien\n…\n\nWeltbank, Statistik Austria, Our World in Data veröffentlichen alle Geodaten in irgendeiner Form. Manchmal ist es notwendig sie in geojsons umzuwandeln. Da könnt ihr gerne auf uns zukommen!"
   }
 ]

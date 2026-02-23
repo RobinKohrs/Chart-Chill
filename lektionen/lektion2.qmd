@@ -1,0 +1,216 @@
+---
+title: "Chart & Chill Vol. 2"
+description: "**Locator-Karten in Datawrapper**"
+author: "Robin"
+date: "2026-02-12"
+image: "/images/lektion2/cover.png"
+---
+
+::: {.callout-tip collapse="true" appearance="default"}
+
+## TLDR
+
+
+<details>
+<summary>Neue Karte erstellen</summary>
+![](/images/lektion2/tldr1.png)
+</details>
+
+
+<details>
+<summary>Locator-Karte auswählen</summary>
+![](/images/lektion2/tldr2.png)
+</details>
+
+
+
+<details>
+<summary>Richtiges Layout auswählen (derzeit: Test)</summary>
+![](/images/lektion2/tldr3.png)
+</details>
+
+
+<details>
+<summary>Auf Mobile Ansicht umschalten</summary>
+![](/images/lektion2/tldr4.png)
+</details>
+
+<details>
+<summary>Kartenstil anpassen</summary>
+
+- Auf Globus ändern wenn globale Daten gezeigt werden
+
+![](/images/lektion2/tldrstil.png)
+</details>
+
+
+<details>
+<summary>Marker, Linien und Flächen hinzufügen</summary>
+
+- Wenige Farben
+
+- Klare Struktur
+
+
+![](/images/lektion2/tldr5.png)
+</details>
+
+<details>
+<summary>Auf Desktopansicht testen</summary>
+![](/images/lektion2/tldrdesk.png)
+</details>
+
+
+<details>
+<summary>Veröffentlichen und in Lido einbauen</summary>
+
+Den **Zum Teilen** Link kopieren und in Lido einfügen!
+
+![](/images/lektion2/tldrpub.png)
+</details>
+
+
+:::
+
+
+
+
+
+# Was sind Locator-Karten?
+
+- Locator Karten sind eine von drei Möglichkeiten in Datawrapper Karten zu machen
+
+- Sie sind besonders nützlich **wo etwas ist** (und das auf verschiedenen Skalen)
+  - **Große Skala:** In einem Artikel über eine bestimme Straße
+  - **Mittlere Skala:** Wo in Österreich liegt der Großglockner
+  - **kleine Skala:** Wo liegt Papua Neuguinea
+  
+- Sie sind somit gut geeignet für das **schnelle verorten von Dingen**
+  - Punkte (Berge, Tatorte, Gebäude,...)
+  - Linien (Routen, Straßen,...)
+  - Flächen (Länder, Parzellen, Gebäudegrundrisse,...)
+
+# Was sind Locator-Karten **nicht**?
+
+- Sie sind (in der Regel) nicht datengetrieben
+  - Für die Frage: **Wo sind die Mieten in Österreich am teuersten** oder **Wie war das Wahlergebnis auf Gemeindeebene** sind andere Kartentypen besser geeignet
+
+- **NICHHT GEEIGNET FÜR GRÖßENVERGLEIHE VON LÄNDERN**
+
+- Sie sind **NICHT** zoombar -> **keine Interaktivität** das es wirklich nur um das Verorten geht!
+
+
+# Wie bekomme ich (Geo-) Daten in Locator-Karten?
+
+## Punkte und Flächen: (Mostly) In Datawrapper selbst: 
+
+![](/images/lektion2/geocoder.png)
+
+- Für **Punkte** und **Flächen** funktioniert das Suchfeld in Datawrapper ähnlich wie Google Maps
+
+- Einfach eingeben und auf Ergebnisvorschläge warten
+
+- Sollte es etwas nicht geben: Google Maps Links können auch kopiert werden!
+  - Sowohl von Orten wie [hier](https://www.google.de/maps/place/Augarten/@48.2197906,16.4016595,9338m/data=!3m1!1e3!4m6!3m5!1s0x476d07ae7c92925d:0xa0e730ea1f204b9b!8m2!3d48.2261111!4d16.3766669!16s%2Fm%2F0406psn?entry=ttu&g_ep=EgoyMDI2MDIxMC4wIKXMDSoASAFQAw%3D%3D)
+  - Oder man macht einen Rechtklick in Google Maps und kopiert die Koordinaten und fügt sie dann einfach in Datawrapper ein!
+  
+## Linien
+ 
+ - Linien können nicht direkt in Datawrapper gezeichnet werden
+ 
+ - Sie müssen entwerder bereits als Datei (ein sogenanntes geojson) vorliegen oder selber gezeichnet werden (am einfachsten in [geojson.io](https://geojson.io/))
+ 
+## GEOJSON.IO
+
+- Sehr nützlicher Broser-Editor um Punkte, Flächen und Linien selber zu zeichnen!
+
+- Während mann die <span style="color: #FFDC2C; text-align: center; font-weight: bold;">Geometrie</span>  auf der Karte zeichnet baut sich <span style="color: #FA3C63; text-align: center; font-weight: bold; ">rechts der Geojson-Code auf</span> , der dann einfach zu Datawrapper kopiert werden kann. Oder man speichert ihn als geojson und läd ihn dann zu Datawrapper!
+  
+
+![](/images/lektion2/geojsonio.png)
+
+# Externe Datenquellen
+
+## Das Datenformat: GEOJSON
+- Wie excel-Dateien für Grafiken, können für Karten sogenannte `geojson`-Dateien verwendet werden
+
+- Strukturiertes, vorgegebenes Format für Punkte, Linien und Flächen
+
+### Punkte
+
+```json
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [13.405, 52.520] 
+  },
+  "properties": {
+    "name": "Berlin Fernsehturm"
+  }
+}
+```
+
+### Linien
+
+```json
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "LineString",
+    "coordinates": [
+      [13.405, 52.520],
+      [13.415, 52.530],
+      [13.425, 52.525]
+    ]
+  },
+  "properties": {
+    "name": "Chinesische Mauer"
+  }
+}
+```
+### Flächen
+
+```json
+{
+  "type": "Feature",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [13.370, 52.515],
+        [13.380, 52.515],
+        [13.380, 52.520],
+        [13.370, 52.520],
+        [13.370, 52.515]
+      ]
+    ]
+  },
+  "properties": {
+    "name": "Versorgungsgebiet"
+  }
+}
+```
+
+## Datenquellen
+
+- [data.gv.at](ganz viele Punkt, Linien und Flächendaten für Österreich) wie z.B.
+  - [Defibrillatoren Standorte in Wien](https://www.data.gv.at/datasets/96196887-5a20-4e93-a302-72f306f32c9d?locale=de)
+  - [Christbaumsammelstenn in Wien](https://www.data.gv.at/datasets/038920bb-8c40-4a30-8d0c-0a29bcd64751?locale=de)
+  - ...
+  
+- Weltbank, Statistik Austria, Our World in Data veröffentlichen alle Geodaten in irgendeiner Form. Manchmal ist es notwendig sie in geojsons umzuwandeln. Da könnt ihr gerne auf uns zukommen!
+
+# Stylen in Datawrapper
+
+- Sehr selbsterklärend und am besten [hier](https://academy.datawrapper.de/category/160-locator-maps) schauen für Hilfe
+
+
+
+
+
+# Nützliche Links
+
+- [Datawrapper Academy: How to create a Locator Map](https://academy.datawrapper.de/article/161-how-to-create-a-locator-map)
+- [Locator-Karten Editor verstehen](https://www.datawrapper.de/blog/new-locator-map-marker-editor)
+- 

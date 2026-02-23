@@ -2,10 +2,25 @@
 title: "Willkommen bei Chart & Chill"
 ---
 
-Dies ist eine Website zum Erlernen von Datawrapper.
+Dies ist eine Website zum Erlernen von Datawrapper und wie wir es am Standard verwenden!
 
 Datawrapper ist ein Online-Tool, das ihr am besten auf einem Desktop-Computer verwendet. Ihr könnt es unter [app.datawrapper.de](https://app.datawrapper.de) aufrufen.
 
 Für die Zugangsdaten (Benutzername und Passwort) schreibt uns bitte eine E-Mail an [datenjournalismus@derstandard.at](mailto:datenjournalismus@derstandard.at). Bei sonstigen Fragen könnt ihr euch ebenfalls an uns wenden.
 
 Für schnelle Hilfe und Austausch gibt es auch unsere [Datawrapper-Hilfe Teams-Gruppe](https://teams.microsoft.com/l/chat/19:13f4afe9715f4ad1afaa9bdd506d6f30@thread.v2/conversations?context=%7B%22contextType%22%3A%22chat%22%7D).
+
+::: {.callout-tip  appearance="default"}
+## Für Jede Grafik Wichtig
+
+Für die wichtigsten Datawrapper-Tipps bitte direkt [hier](nonnegotiables.html) schauen
+
+:::
+
+
+::: {.callout-tip  appearance="default"}
+## Datawrapper-Academy
+
+Und für Alle, die noch viel tiefer eintauchen möchten, gibt es sehr viele sehr gute Artikel von Datawrapper selber in der [Datawrapper Academy](https://academy.datawrapper.de/)
+
+:::

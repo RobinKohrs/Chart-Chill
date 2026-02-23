@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.31">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-5b4ad623e5705c0698d39aec6f10cf02.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -98,6 +99,10 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Lektionen</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="./nonnegotiables.html"> 
+<span class="menu-text">Non Negotiables😬</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="./galerie.html"> 
 <span class="menu-text">Galerie</span></a>
   </li>  
@@ -141,10 +146,36 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Dies ist eine Website zum Erlernen von Datawrapper.</p>
+<p>Dies ist eine Website zum Erlernen von Datawrapper und wie wir es am Standard verwenden!</p>
 <p>Datawrapper ist ein Online-Tool, das ihr am besten auf einem Desktop-Computer verwendet. Ihr könnt es unter <a href="https://app.datawrapper.de">app.datawrapper.de</a> aufrufen.</p>
 <p>Für die Zugangsdaten (Benutzername und Passwort) schreibt uns bitte eine E-Mail an <a href="mailto:datenjournalismus@derstandard.at">datenjournalismus@derstandard.at</a>. Bei sonstigen Fragen könnt ihr euch ebenfalls an uns wenden.</p>
 <p>Für schnelle Hilfe und Austausch gibt es auch unsere <a href="https://teams.microsoft.com/l/chat/19:13f4afe9715f4ad1afaa9bdd506d6f30@thread.v2/conversations?context=%7B%22contextType%22%3A%22chat%22%7D">Datawrapper-Hilfe Teams-Gruppe</a>.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Für Jede Grafik Wichtig
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Für die wichtigsten Datawrapper-Tipps bitte direkt <a href="nonnegotiables.html">hier</a> schauen</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Datawrapper-Academy
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Und für Alle, die noch viel tiefer eintauchen möchten, gibt es sehr viele sehr gute Artikel von Datawrapper selber in der <a href="https://academy.datawrapper.de/">Datawrapper Academy</a></p>
+</div>
+</div>
 
 
 
@@ -200,13 +231,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
