@@ -198,6 +198,9 @@ Den **Zum Teilen** Link kopieren und in Lido einfügen!
   - [Defibrillatoren Standorte in Wien](https://www.data.gv.at/datasets/96196887-5a20-4e93-a302-72f306f32c9d?locale=de)
   - [Christbaumsammelstenn in Wien](https://www.data.gv.at/datasets/038920bb-8c40-4a30-8d0c-0a29bcd64751?locale=de)
   - ...
+
+- Esri:
+  - hat manchmal auch gute Daten wie [hier zu Unterseekabeln](https://oceangis.esri.de/datasets/EsriOceans::global-submarine-cables-1/explore?layer=1&location=44.462775%2C-23.686523%2C4)
   
 - Weltbank, Statistik Austria, Our World in Data veröffentlichen alle Geodaten in irgendeiner Form. Manchmal ist es notwendig sie in geojsons umzuwandeln. Da könnt ihr gerne auf uns zukommen!
 
