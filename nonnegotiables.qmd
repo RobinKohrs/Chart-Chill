@@ -11,7 +11,7 @@ format: html
 
 - Nicht zu viele Farben verwenden. 
 
-- Grafiken leiber aufteilen als zu viele Informationen in eine Geben
+- Grafiken lieber aufteilen als zu viele Informationen in eine Geben
 
 # Layout
 
