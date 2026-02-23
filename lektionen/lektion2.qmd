@@ -13,6 +13,9 @@ image: "/images/lektion2/cover.png"
 
 <details>
 <summary>Neue Karte erstellen</summary>
+
+- In [Datawrapper anmelden](https://www.datawrapper.de/) anmelden und oben rechts auf **Neu erstellen** klicken
+
 ![](/images/lektion2/tldr1.png)
 </details>
 
