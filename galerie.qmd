@@ -3,3 +3,5 @@ title: "Galerie"
 ---
 
 Eine Galerie von Diagrammen, die mit Datawrapper erstellt wurden.
+
+Eines Tages füge ich hier auch Grafiken ein...

@@ -11,7 +11,11 @@ format: html
 
 - Nicht zu viele Farben verwenden. 
 
-- Grafiken lieber aufteilen als zu viele Informationen in eine Geben
+- Grafiken lieber aufteilen als zu viele Informationen in eine packen
+
+- Ressortfarben verwenden (siehe unten)
+
+- Spaß haben
 
 # Layout
 
@@ -20,19 +24,4 @@ In Schritt  kann man in allen Datawrapper-Grafiken das "Layout" auswählen. Das 
 Wir sind gerade dabei die Layouts von <span style="color: #7758EF; text-align: center; font-weight: bold;">alt</span> auf <span style="color: #F93C63; text-align: center; font-weight: bold;">neu</span> umzustellen.
 
 ![](/images/misc/layout.png)
-
-## Alt
-
-- Hatte oben links in der Ecke diesen Schwarzen Knicks
-
-![](/images/misc/knicks.png)
-- Dadurch haben wir insgesamt 40px in der Breite verloren was besonders auf Handy sehr schmerzhaft ist
-
-
-## Neu
-
-- Kein Hackerl
-
-- Durchsichtig
-
 

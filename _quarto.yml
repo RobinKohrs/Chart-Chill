@@ -12,6 +12,8 @@ website:
         text: "Lektionen"
       - href: nonnegotiables.qmd
         text: "Non Negotiables😬"
+      - href: links.qmd
+        text: "Links"
       - href: galerie.qmd
         text: "Galerie"
       - href: ueber.qmd

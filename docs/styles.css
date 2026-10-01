@@ -227,6 +227,70 @@ img[src*="lektion3/title"] {
   font-weight: 400;
 }
 
+/* Link-Kacheln */
+.link-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.link-cards > p {
+  margin: 0;
+  display: flex;
+}
+
+.link-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  width: 100%;
+  padding: 1.1rem 1.2rem;
+  border-radius: 0.75rem;
+  background: #f4f7fb;
+  color: inherit !important;
+  text-decoration: none !important;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.link-card:hover {
+  transform: translateY(-3px);
+  background: #e8eef5;
+  box-shadow: 0 6px 18px rgba(54, 101, 154, 0.18);
+}
+
+.link-card .lc-tag {
+  align-self: flex-start;
+  padding: 0.1em 0.6em;
+  border-radius: 999px;
+  font-size: 0.75em;
+  font-weight: 600;
+  color: #fff;
+  background: #36659a;
+}
+
+.link-card .lc-title {
+  font-size: 1.1em;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #173c49;
+}
+
+.link-card .lc-desc {
+  flex-grow: 1;
+  font-size: 0.92em;
+  color: #495057;
+}
+
+.link-card .lc-host {
+  font-size: 0.8em;
+  color: #36659a;
+}
+
+.link-card .lc-host::after {
+  content: " ↗";
+}
+
 .qw-badge {
   display: inline-block;
   padding: 0.1em 0.6em;

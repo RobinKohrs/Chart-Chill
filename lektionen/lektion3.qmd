@@ -3,16 +3,17 @@ title: "Chart & Chill Vol. 3"
 description: "**Liniendiagramme 1x1**"
 author: "Robin"
 date: "2026-10-01"
-image: "/images/lektion3/title.png"
+image: "https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNWcxejI2YzZtZTU0NWR6NjZpZjNkd3J0NTgwNDN2bzB1cXljb3QwciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/f67U9Xc53i4ViUs5T2/giphy.gif"
 format:
   html:
     include-after-body: ../includes/dw-embed.html
 ---
 
-
 # Was sind Liniendiaframme?
 
 - eine der wichtigsten Grafikarten um Veränderungen über die Zeit darzustellen
+
+- häufig der <mark>Default</span> in Datawrapper
 
 - Stellen oft kontinuierliche Veränderungen über die Zeit dar
   - innerhalb einer Stunde
@@ -366,7 +367,12 @@ Vom schlimmsten zum besten Chart — nacheinander aufklappen und zwischen <mark>
 ## 2 · Richtiges Zahlenformat
 
 - Prozent können direkt in Schritt 3 in Datarwapper eingefügt werden. "Exotische" Formate müssten als Präfix/Suffix angefügt werden
+![](/images/lektion3/rad.png)
+
 - Vertikale Achse > Beschriften > Innen ! (spart auch ein wenig Platz in der Horizontalen)
+
+![](/images/lektion3/innen.png)
+
 - Nicht mehr Nachkommastellen als nötig: `12,3 %` statt `12,3456 %`.
 - Die <mark>Einheit</mark> gehört an die Achse oder in den Untertitel — nicht weglassen.
 :::
@@ -385,7 +391,8 @@ Vom schlimmsten zum besten Chart — nacheinander aufklappen und zwischen <mark>
 ## 4 · Y-Achse bewusst wählen
 
 - Anders als bei Balken muss die Y-Achse <mark>nicht bei 0</mark> beginnen — es geht um die Veränderung.
-- Aber: Nicht so stark zoomen, dass kleine Schwankungen dramatisch wirken.
+- Aber: Nicht so stark zoomen, dass kleine Schwankungen dramatisch wirken. Dazu auch [hier](https://www.derstandard.at/story/3000000290271/arbeitsblaetter-zum-thema-verifikation)
+
 :::
 
 ::: {.callout-note .qw-mittel collapse="true" icon="false"}
@@ -443,7 +450,8 @@ Vom schlimmsten zum besten Chart — nacheinander aufklappen und zwischen <mark>
 :::
 
 
-asdasd
+- Das google-sheet dazu gibt es [hier](https://docs.google.com/spreadsheets/d/1NE66xLV_3eRzfXC056YTFaxhoQDcml9TYw96TsUjf4A/edit?gid=0#gid=0)
+- Das Datawrapper-Chart [hier](https://app.datawrapper.de/der-standard/edit/DnMw1/visualize#refine)
 
 :::
 
@@ -460,6 +468,10 @@ asdasd
 
 # Links
 
-- https://old.observablehq.com/blog/bars-vs-lines-time-series-data
-- https://designsystem.morningstar.com/whats-new/blog/plotting-time-series-data
-- https://www.datawrapper.de/blog/chart-types-guide
+::: {.link-cards}
+[[Linie vs. Säule]{.lc-tag} [Bars vs. lines for time series]{.lc-title} [Wann Säulen, wann Linien bei Zeitreihen?]{.lc-desc} [observablehq.com]{.lc-host}](https://old.observablehq.com/blog/bars-vs-lines-time-series-data){.link-card target="_blank" rel="noopener"}
+
+[[Zeitreihen]{.lc-tag} [Plotting time series data]{.lc-title} [Gestaltungsregeln für Zeitreihen aus dem Morningstar Design System.]{.lc-desc} [morningstar.com]{.lc-host}](https://designsystem.morningstar.com/whats-new/blog/plotting-time-series-data){.link-card target="_blank" rel="noopener"}
+
+[[Chartwahl]{.lc-tag} [Chart types guide]{.lc-title} [Überblick über die Chart-Typen in Datawrapper.]{.lc-desc} [datawrapper.de]{.lc-host}](https://www.datawrapper.de/blog/chart-types-guide){.link-card target="_blank" rel="noopener"}
+:::

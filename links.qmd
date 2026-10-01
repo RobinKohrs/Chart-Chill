@@ -1,0 +1,26 @@
+---
+title: "LINKS"
+format: html
+---
+
+# Datawrapper
+
+::: {.link-cards}
+[[Hilfe]{.lc-tag} [Datawrapper Academy]{.lc-title} [Anleitungen und Tutorials zu allen Chart-Typen.]{.lc-desc} [datawrapper.de]{.lc-host}](https://www.datawrapper.de/academy){.link-card target="_blank" rel="noopener"}
+
+[[Styleguide]{.lc-tag} [Reuters Datawrapper Guide]{.lc-title} [Wie die Reuters-Grafikabteilung Datawrapper nutzt.]{.lc-desc} [reuters-graphics.github.io]{.lc-host}](https://reuters-graphics.github.io/newsroom-datawrapper-guide/){.link-card target="_blank" rel="noopener"}
+:::
+
+# Welches Chart?
+
+::: {.link-cards}
+[[Chartwahl]{.lc-tag} [FT Visual Vocabulary]{.lc-title} [Welches Chart passt zu welcher Aussage?]{.lc-desc} [ft-interactive.github.io]{.lc-host}](https://ft-interactive.github.io/visual-vocabulary/){.link-card target="_blank" rel="noopener"}
+
+[[Chartwahl]{.lc-tag} [Chart types guide]{.lc-title} [Überblick über die Chart-Typen in Datawrapper.]{.lc-desc} [datawrapper.de]{.lc-host}](https://www.datawrapper.de/blog/chart-types-guide){.link-card target="_blank" rel="noopener"}
+:::
+
+# Farben
+
+::: {.link-cards}
+[[Farben]{.lc-tag} [CARTO Colors]{.lc-title} [Farbpaletten für Karten und Charts.]{.lc-desc} [carto.com]{.lc-host}](https://carto.com/carto-colors/){.link-card target="_blank" rel="noopener"}
+:::
