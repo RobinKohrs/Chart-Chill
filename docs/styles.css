@@ -100,17 +100,20 @@ img[src*="lektion3/title"] {
   margin-right: 1.25rem;
 }
 
-.chart-reveal .tabset-margin-container {
+.chart-reveal .tabset-margin-container,
+.chart-switch .tabset-margin-container {
   display: none;
 }
 
 /* Roh / Verbessert als Umschalter statt Reiter */
-.chart-reveal .panel-tabset {
+.chart-reveal .panel-tabset,
+.chart-switch .panel-tabset {
   margin-top: 1rem;
   margin-bottom: 1.25rem;
 }
 
-.chart-reveal .panel-tabset .nav-tabs {
+.chart-reveal .panel-tabset .nav-tabs,
+.chart-switch .panel-tabset .nav-tabs {
   display: inline-flex;
   width: fit-content;
   gap: 0.25rem;
@@ -121,7 +124,8 @@ img[src*="lektion3/title"] {
   background: #fff;
 }
 
-.chart-reveal .panel-tabset .nav-tabs .nav-link {
+.chart-reveal .panel-tabset .nav-tabs .nav-link,
+.chart-switch .panel-tabset .nav-tabs .nav-link {
   border: none;
   border-radius: 999px;
   padding: 0.35rem 1.1rem;
@@ -130,12 +134,14 @@ img[src*="lektion3/title"] {
   background: transparent;
 }
 
-.chart-reveal .panel-tabset .nav-tabs .nav-link.active {
+.chart-reveal .panel-tabset .nav-tabs .nav-link.active,
+.chart-switch .panel-tabset .nav-tabs .nav-link.active {
   color: #fff;
   background: var(--accent);
 }
 
-.chart-reveal .panel-tabset .tab-content {
+.chart-reveal .panel-tabset .tab-content,
+.chart-switch .panel-tabset .tab-content {
   border: none;
   padding: 0;
   background: #fff;
@@ -147,10 +153,20 @@ img[src*="lektion3/title"] {
   padding: 1rem;
 }
 
-.chart-reveal iframe {
+.chart-reveal iframe,
+.chart-switch iframe {
   display: block;
   width: 100% !important;
   border: none;
+}
+
+/* Umschalter ohne Aufklapp-Block, z. B. Interpolation */
+.chart-switch {
+  --accent: #36659a;
+}
+
+.chart-switch .panel-tabset .nav-tabs {
+  background: #e8eef5;
 }
 
 .dw-placeholder {

@@ -137,6 +137,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#beispiele" id="toc-beispiele" class="nav-link" data-scroll-target="#beispiele">Beispiele</a></li>
   </ul></li>
   <li><a href="#mini-quiz-linie-oder-anderes-chart" id="toc-mini-quiz-linie-oder-anderes-chart" class="nav-link" data-scroll-target="#mini-quiz-linie-oder-anderes-chart">Mini-Quiz: Linie oder anderes Chart?</a></li>
+  <li><a href="#interpolation" id="toc-interpolation" class="nav-link" data-scroll-target="#interpolation">Interpolation</a></li>
   <li><a href="#bad-chart-good-chart" id="toc-bad-chart-good-chart" class="nav-link" data-scroll-target="#bad-chart-good-chart">Bad Chart → Good Chart</a></li>
   <li><a href="#quick-wins" id="toc-quick-wins" class="nav-link" data-scroll-target="#quick-wins">Quick Wins</a></li>
   <li><a href="#ausprobieren" id="toc-ausprobieren" class="nav-link" data-scroll-target="#ausprobieren">Ausprobieren</a></li>
@@ -199,7 +200,22 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>die <mark>Verbindung</mark> zwischen den Messungen/Datenpunkten suggerieren Daten (die eigentlich nicht existieren)</li>
 </ul></li>
+<li><p><mark>Häufig Entscheidung zwischen Balkendiagramm oder Liniendiagramm!</mark></p></li>
+<li><p>Während Balkendiagramme auch für Darstellungen der Veränderung über Zeit verwendet werden können, können Liniendiagramme <mark>nicht</mark> für Kategorien verwendet werden!</p></li>
 </ul>
+<div class="chart-switch">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">No Go</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">No Go (kinda)</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<p><iframe title="Datawrapper-Grafik" data-dw-src="https://datawrapper.dwcdn.net/BDRjg/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<p><iframe title="Datawrapper-Grafik" data-dw-src="https://datawrapper.dwcdn.net/Apfo3/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
+</div>
+</div>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -558,6 +574,25 @@ Lösung &amp; Erklärung
 </section>
 </div>
 </section>
+<section id="interpolation" class="level1">
+<h1>Interpolation</h1>
+<div class="chart-switch">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Linear</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Kurven</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Stufen</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<p><iframe title="Interpolation: linear" data-dw-src="https://datawrapper.dwcdn.net/pTsIH/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
+</div>
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<p><iframe title="Interpolation: Kurven" data-dw-src="https://datawrapper.dwcdn.net/ukdz9/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
+</div>
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<p><iframe title="Interpolation: Stufen" data-dw-src="https://datawrapper.dwcdn.net/CfntJ/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section id="bad-chart-good-chart" class="level1">
 <h1>Bad Chart → Good Chart</h1>
 <p>Vom schlimmsten zum besten Chart — nacheinander aufklappen und zwischen <mark>Roh</mark> und <mark>Verbessert</mark> hin- und herklicken.</p>
@@ -567,12 +602,12 @@ Lösung &amp; Erklärung
 1 · Bad — Grafik anzeigen
 </summary>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Roh</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Verbessert</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Roh</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Verbessert</a></li></ul>
 <div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
 <p><iframe title="Datawrapper-Grafik" data-dw-src="https://datawrapper.dwcdn.net/C2IGd/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
 </div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
 <p><iframe title="Datawrapper-Grafik" data-dw-src="https://datawrapper.dwcdn.net/uHVDZ/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
 </div>
 </div>
@@ -585,12 +620,12 @@ Lösung &amp; Erklärung
 2 · Less bad — Grafik anzeigen
 </summary>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Roh</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Verbessert</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Roh</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Verbessert</a></li></ul>
 <div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <p><iframe title="Datawrapper-Grafik" data-dw-src="https://datawrapper.dwcdn.net/r94HO/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
 </div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <p><iframe title="Datawrapper-Grafik" data-dw-src="https://datawrapper.dwcdn.net/37ptv/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
 </div>
 </div>
@@ -603,12 +638,12 @@ Lösung &amp; Erklärung
 3 · Good — Grafik anzeigen
 </summary>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Roh</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Verbessert</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">Roh</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">Verbessert</a></li></ul>
 <div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
 <p><iframe title="Datawrapper-Grafik" data-dw-src="https://datawrapper.dwcdn.net/YtOZr/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
 </div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
 <p><span class="dw-placeholder">Dieses Chart folgt noch.</span></p>
 </div>
 </div>
@@ -621,12 +656,12 @@ Lösung &amp; Erklärung
 4 · Real good — Grafik anzeigen
 </summary>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Roh</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Verbessert</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true" href="">Roh</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false" href="">Verbessert</a></li></ul>
 <div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
 <p><iframe title="Datawrapper-Grafik" data-dw-src="https://datawrapper.dwcdn.net/sDRv3/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
 </div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
 <p><span class="dw-placeholder">Dieses Chart folgt noch.</span></p>
 </div>
 </div>
@@ -668,6 +703,7 @@ Lösung &amp; Erklärung
 <div class="callout-body-container callout-body">
 <ul>
 <li>Prozent können direkt in Schritt 3 in Datarwapper eingefügt werden. “Exotische” Formate müssten als Präfix/Suffix angefügt werden</li>
+<li>Vertikale Achse &gt; Beschriften &gt; Innen ! (spart auch ein wenig Platz in der Horizontalen)</li>
 <li>Nicht mehr Nachkommastellen als nötig: <code>12,3 %</code> statt <code>12,3456 %</code>.</li>
 <li>Die <mark>Einheit</mark> gehört an die Achse oder in den Untertitel — nicht weglassen.</li>
 </ul>
@@ -793,6 +829,43 @@ Lösung &amp; Erklärung
 <li>Trick für „ab hier Prognose“: zwei Spalten anlegen (Ist-Werte / Prognose), die sich <mark>in einem Punkt überschneiden</mark>, und die Prognose-Linie gestrichelt stylen.</li>
 <li>Fehlen Werte (z. B. keine Erhebung 2020), die Lücke lieber <mark>sichtbar lassen</mark>, als stillschweigend durchzuverbinden.</li>
 </ul>
+</div>
+</div>
+</div>
+<div class="qw-schwer callout callout-style-default callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>9 · Stark schwankende Daten glätten
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Bei stark schwankenden täglichen Daten kann ein <mark>laufendes Mittel</mark> helfen, den zugrunde liegenden Trend sichtbar zu machen.</li>
+<li>Beispiel: <a href="https://docs.google.com/spreadsheets/d/1NE66xLV_3eRzfXC056YTFaxhoQDcml9TYw96TsUjf4A/edit?gid=0#gid=0">Statt einzelner Tageswerte ein <mark>7-Tage-Mittel</mark> zeigen — dadurch gleichen sich etwa Wochentagseffekte aus.</a></li>
+<li>Je größer das Zeitfenster, desto <mark>stärker die Glättung</mark> — aber desto mehr kurzfristige Information geht verloren.</li>
+<li>Wichtig: Immer angeben, <mark>über welchen Zeitraum</mark> gemittelt wurde, z. B. „7-Tage-Mittel“.</li>
+<li>Die Rohdaten nicht unnötig verstecken: Wenn sie für die Aussage wichtig sind, können sie z. B. <mark>hellgrau im Hintergrund</mark> und das laufende Mittel hervorgehoben dargestellt werden.</li>
+<li>In Google Sheets lässt sich ein 7-Tage-Mittel z. B. mit <code>=AVERAGE(B2:B8)</code> berechnen und anschließend nach unten ziehen.</li>
+</ul>
+<div class="chart-switch">
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true" href="">Rohdaten</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false" href="">Geglättet</a></li></ul>
+<div class="tab-content">
+<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
+<p><iframe title="Datawrapper-Grafik" data-dw-src="https://datawrapper.dwcdn.net/v9BRZ/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
+</div>
+<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
+<p><iframe title="Datawrapper-Grafik" data-dw-src="https://datawrapper.dwcdn.net/DnMw1/" src="about:blank" scrolling="no" frameborder="0" style="width: 100%; border: none;" height="400"></iframe></p>
+</div>
+</div>
+</div>
+</div>
+<p>asdasd</p>
 </div>
 </div>
 </div>

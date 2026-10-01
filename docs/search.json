@@ -46,7 +46,7 @@
     "href": "lektionen/lektion3.html",
     "title": "Chart & Chill Vol. 3",
     "section": "",
-    "text": "eine der wichtigsten Grafikarten um Veränderungen über die Zeit darzustellen\nStellen oft kontinuierliche Veränderungen über die Zeit dar\n\ninnerhalb einer Stunde\neines Tages\neines Jahres\neiner Dekade\n\nDie Reihenfolge der Datenpunkte von links nach rechts hat eine Bedeutung\n\ndie Verbindung zwischen den Messungen/Datenpunkten suggerieren Daten (die eigentlich nicht existieren)\n\n\n\n\n\n\n\n\nTipX-Achse\n\n\n\n\n\nHäufig Zeit\n\nMinuten\nStunden\nTage\n…\n\nMüssen in einem bestimmten Format für Datawrapper vorliegen!!\n\n\n\n\n\n\n\n\n\nTipY-Achse\n\n\n\n\n\nNumerischer Wert\n\nTemperatur\nArbeitslosenquote\nEinkommen\n…"
+    "text": "eine der wichtigsten Grafikarten um Veränderungen über die Zeit darzustellen\nStellen oft kontinuierliche Veränderungen über die Zeit dar\n\ninnerhalb einer Stunde\neines Tages\neines Jahres\neiner Dekade\n\nDie Reihenfolge der Datenpunkte von links nach rechts hat eine Bedeutung\n\ndie Verbindung zwischen den Messungen/Datenpunkten suggerieren Daten (die eigentlich nicht existieren)\n\nHäufig Entscheidung zwischen Balkendiagramm oder Liniendiagramm!\nWährend Balkendiagramme auch für Darstellungen der Veränderung über Zeit verwendet werden können, können Liniendiagramme nicht für Kategorien verwendet werden!\n\n\n\nNo GoNo Go (kinda)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTipX-Achse\n\n\n\n\n\nHäufig Zeit\n\nMinuten\nStunden\nTage\n…\n\nMüssen in einem bestimmten Format für Datawrapper vorliegen!!\n\n\n\n\n\n\n\n\n\nTipY-Achse\n\n\n\n\n\nNumerischer Wert\n\nTemperatur\nArbeitslosenquote\nEinkommen\n…"
   },
   {
     "objectID": "lektionen/lektion3.html#datumsformate-auf-der-achse",

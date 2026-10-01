@@ -23,7 +23,25 @@ format:
 - Die Reihenfolge der Datenpunkte von links nach rechts hat eine Bedeutung
   - die <mark>Verbindung</mark> zwischen den Messungen/Datenpunkten suggerieren Daten (die eigentlich nicht existieren)
   
-  
+- <mark>Häufig Entscheidung zwischen Balkendiagramm oder Liniendiagramm!</mark>
+
+- Während Balkendiagramme auch für Darstellungen der Veränderung über Zeit verwendet werden können, können 
+Liniendiagramme <mark>nicht</mark> für Kategorien verwendet werden!
+
+::: {.chart-switch}
+::: {.panel-tabset}
+## No Go
+
+{{< dw BDRjg  >}}
+
+## No Go (kinda)
+
+{{< dw Apfo3 >}}
+
+:::
+:::
+
+
   
 ::: {.callout-tip collapse="true" appearance="default"}
 ## X-Achse
@@ -246,6 +264,24 @@ Das sind <mark>Kategorien</mark>, keine kontinuierliche Zeit. Sortiert ihr die B
 :::
 
 
+# Interpolation
+
+::: {.chart-switch}
+::: {.panel-tabset}
+## Linear
+
+{{< dw pTsIH title="Interpolation: linear" >}}
+
+## Kurven
+
+{{< dw ukdz9 title="Interpolation: Kurven" >}}
+
+## Stufen
+
+{{< dw CfntJ title="Interpolation: Stufen" >}}
+:::
+:::
+
 # Bad Chart → Good Chart
 
 Vom schlimmsten zum besten Chart — nacheinander aufklappen und zwischen <mark>Roh</mark> und <mark>Verbessert</mark> hin- und herklicken. 
@@ -330,6 +366,7 @@ Vom schlimmsten zum besten Chart — nacheinander aufklappen und zwischen <mark>
 ## 2 · Richtiges Zahlenformat
 
 - Prozent können direkt in Schritt 3 in Datarwapper eingefügt werden. "Exotische" Formate müssten als Präfix/Suffix angefügt werden
+- Vertikale Achse > Beschriften > Innen ! (spart auch ein wenig Platz in der Horizontalen)
 - Nicht mehr Nachkommastellen als nötig: `12,3 %` statt `12,3456 %`.
 - Die <mark>Einheit</mark> gehört an die Achse oder in den Untertitel — nicht weglassen.
 :::
@@ -381,6 +418,35 @@ Vom schlimmsten zum besten Chart — nacheinander aufklappen und zwischen <mark>
 - Trick für „ab hier Prognose“: zwei Spalten anlegen (Ist-Werte / Prognose), die sich <mark>in einem Punkt überschneiden</mark>, und die Prognose-Linie gestrichelt stylen.
 - Fehlen Werte (z. B. keine Erhebung 2020), die Lücke lieber <mark>sichtbar lassen</mark>, als stillschweigend durchzuverbinden.
 :::
+
+::: {.callout-note .qw-schwer collapse="true" icon="false"}
+## 9 · Stark schwankende Daten glätten
+
+- Bei stark schwankenden täglichen Daten kann ein <mark>laufendes Mittel</mark> helfen, den zugrunde liegenden Trend sichtbar zu machen.
+- Beispiel: [Statt einzelner Tageswerte ein <mark>7-Tage-Mittel</mark> zeigen — dadurch gleichen sich etwa Wochentagseffekte aus.](https://docs.google.com/spreadsheets/d/1NE66xLV_3eRzfXC056YTFaxhoQDcml9TYw96TsUjf4A/edit?gid=0#gid=0)
+- Je größer das Zeitfenster, desto <mark>stärker die Glättung</mark> — aber desto mehr kurzfristige Information geht verloren.
+- Wichtig: Immer angeben, <mark>über welchen Zeitraum</mark> gemittelt wurde, z. B. „7-Tage-Mittel“.
+- Die Rohdaten nicht unnötig verstecken: Wenn sie für die Aussage wichtig sind, können sie z. B. <mark>hellgrau im Hintergrund</mark> und das laufende Mittel hervorgehoben dargestellt werden.
+- In Google Sheets lässt sich ein 7-Tage-Mittel z. B. mit `=AVERAGE(B2:B8)` berechnen und anschließend nach unten ziehen.
+
+::: {.chart-switch}
+::: {.panel-tabset}
+## Rohdaten
+
+{{< dw v9BRZ  >}}
+
+## Geglättet
+
+{{< dw DnMw1 >}}
+
+:::
+:::
+
+
+asdasd
+
+:::
+
 
 # Ausprobieren
 
