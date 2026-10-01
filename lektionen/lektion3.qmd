@@ -1,0 +1,399 @@
+---
+title: "Chart & Chill Vol. 3"
+description: "**Liniendiagramme 1x1**"
+author: "Robin"
+date: "2026-10-01"
+image: "/images/lektion3/title.png"
+format:
+  html:
+    include-after-body: ../includes/dw-embed.html
+---
+
+
+# Was sind Liniendiaframme?
+
+- eine der wichtigsten Grafikarten um Veränderungen über die Zeit darzustellen
+
+- Stellen oft kontinuierliche Veränderungen über die Zeit dar
+  - innerhalb einer Stunde
+  - eines Tages
+  - eines Jahres
+  - einer Dekade
+
+- Die Reihenfolge der Datenpunkte von links nach rechts hat eine Bedeutung
+  - die <mark>Verbindung</mark> zwischen den Messungen/Datenpunkten suggerieren Daten (die eigentlich nicht existieren)
+  
+  
+  
+::: {.callout-tip collapse="true" appearance="default"}
+## X-Achse
+
+<mark>Häufig Zeit</mark>
+
+- Minuten
+- Stunden
+- Tage
+- ...
+
+Müssen in einem bestimmten Format für Datawrapper vorliegen!!
+::: 
+
+::: {.callout-tip collapse="true" appearance="default"}
+## Y-Achse
+
+<mark>Numerischer Wert</mark>
+
+- Temperatur 
+- Arbeitslosenquote 
+- Einkommen 
+- ...
+::: 
+  
+
+# Wann sind Liniendiagramme zu verwenden?
+
+- Wenn eine <mark>Entwicklung über Zeit</mark> gezeigt werden soll
+  - Trends, Anstiege, Rückgänge und Wendepunkte werden besonders gut sichtbar.
+  
+- Wenn die <mark>Reihenfolge der Datenpunkte wichtig</mark> ist
+  - z.B. Montag → Dienstag → Mittwoch oder 2020 → 2021 → 2022.
+  - Anders als Kategorien wie Wien, Graz und Linz können die Werte nicht beliebig umsortiert werden.
+  
+- Wenn zwischen den Messpunkten eine sinnvolle Verbindung besteht
+  - Beispiel Temperatur: Zwischen einer Messung um 7 Uhr und einer um 8 Uhr <mark>existiert die Temperatur weiter</mark>.
+  - Die Linie vermittelt deshalb sinnvoll einen Verlauf zwischen den Messpunkten.
+  - Der Wert zum Zeitpunkt t hängt statistisch vom Wert bei t−1 ab. Das nennt man bei Zeitreihen etwa Autokorrelation. Das kann vorkommen, ist aber keine Voraussetzung für ein Liniendiagramm. (40 Grad um 16 Uhr sind wahrscheilicher wenn es um 15 Uhr auch schon 39 und nicht 12 Grad hatte...)
+
+::: {.callout-warning collapse="true" appearance="default"}
+## Was für Werte hier?!
+
+{{< dw 8kIkw height=414 title="BIP pro Jahr" >}}
+
+:::
+
+::: {.callout-note collapse="true" appearance="default"}
+## Vllt doch eher Balken
+
+{{< dw E2Pet height=414 title="BIP pro Jahr" >}}
+
+:::
+
+- Wenn <mark>viele Zeitpunkte dargestellt werden</mark>
+  - z.B. tägliche Aktienkurse über mehrere Jahre oder tägliche Temperaturen.
+  - Hunderte Balken würden zu einer nahezu geschlossenen Fläche werden; eine Linie zeigt den Verlauf wesentlich klarer.
+  
+- Wenn Veränderungen wichtiger sind als einzelne absolute Werte
+  - <mark>Linie → Wie entwickelt sich etwas?</mark>
+  - <mark>Balken/Säulen → Wie groß sind die einzelnen Werte?</mark>
+  
+  
+- Wenn mehrere Entwicklungen miteinander verglichen werden
+  - z.B. Arbeitslosenquote von Österreich, Deutschland und Italien seit 2000.
+  - <mark>Mehrere Linien</mark> lassen Trends und unterschiedliche Entwicklungen gut vergleichen.
+
+
+# Wie müssen die Daten für Datawrapper aussehen?
+
+- <mark>1 Spalte Zeit</mark> (ganz links) – eine Zeile pro Zeitpunkt
+- <mark>1 Spalte Werte</mark> – eine Linie
+- <mark>Mehrere Linien → mehrere Werte-Spalten</mark>, eine pro Linie. Der Spaltenname wird zum Namen der Linie.
+- Zahlen ohne Einheiten oder Tausenderpunkte, Dezimaltrennzeichen einheitlich
+
+<mark>Eine Linie</mark> (Beispielwerte):
+
+| Jahr | Arbeitslosenquote |
+|:--|--:|
+| 2000 | 3.6 |
+| 2001 | 3.6 |
+| 2002 | 4.0 |
+
+<mark>Mehrere Linien</mark> (Beispielwerte):
+
+| Jahr | Österreich | Deutschland | Italien |
+|:--|--:|--:|--:|
+| 2000 | 3.6 | 7.9 | 10.0 |
+| 2001 | 3.6 | 7.8 | 9.0 |
+| 2002 | 4.0 | 8.6 | 8.5 |
+
+In Schritt <mark>Check & Describe</mark> muss die Zeitspalte als <mark>Datum</mark> erkannt werden (linksbündig, nicht als Text). Welche Formate beim Upload funktionieren, steht in der Academy: [Date formats that Datawrapper recognizes](https://academy.datawrapper.de/article/218-date-formats-that-datawrapper-recognizes).
+
+## Datumsformate auf der Achse
+
+::: {.callout-note collapse="true" appearance="default"}
+## Wie schaut das aus in Datawrapper
+
+![](/images/lektion3/formats.png)
+
+:::
+
+
+
+
+<mark>Upload und Anzeige sind getrennt:</mark> Unter <mark>Visualize → Refine</mark> wählt ihr, wie Datawrapper die Zeit <mark>beschriftet</mark>. Die Presets sind smart: Sie wiederholen nicht jedes Mal das Jahr, kürzen Monatsnamen, wenn viele Ticks eng beieinanderliegen, und lassen die Achse lesbar bleiben — ohne dass ihr Labels von Hand entfernt.
+
+| Preset in Datawrapper | Wann sinnvoll? | So wirkt es auf der Achse (schematisch) |
+|:--|:--|:--|
+| <mark>Jahre</mark> (`2015`, `2016`, …) | wenige Jahre, viel Platz | `2011` · `2012` · `2013` · `2014` · … |
+| <mark>Kurzjahre</mark> (`'15`, `'16`, …) | viele Jahre, wenig Platz | `'11` · `'12` · `'13` · `'14` · … |
+| <mark>Monate + Jahr</mark> (`2015`, `Feb`, `Mar` / `Apr '15`, …) | Monate über mehrere Jahre | `2018 Oct` · `Nov` · `Dec` · `2019 Jan` · … |
+| <mark>Monate</mark> (`Apr`, `May`, …) | viele Monate <mark>eines</mark> Jahres | `Jun` · `Jul` · `Aug` · `Sep` · … |
+| <mark>Quartale</mark> (`2015 Q1`, … / `2015`, `Q2`, `Q3`) | Quartalsdaten, wenig vs. viel Detail | `2015 Q1` · `Q2` · `Q3` · `Q4` · `2016 Q1` · … |
+| <mark>Saison</mark> (`2018-19` / `'18-'19`) | Sport- oder Wirtschaftsjahre | `2018-19` · `2019-20` · `2020-21` · … |
+| <mark>Tage</mark> (`April`, `2`, `3` / `April 2`, `2015`) | Tages- oder Stundenverläufe | `Feb 27` · `28` · `29` · `Mar 1` · … |
+
+::: {.callout-tip collapse="false" appearance="default"}
+## Custom & Feintuning
+
+- <mark>anpassen</mark> (letzte Option im Dropdown): eigene Tokens, z. B. `MMM YYYY` → `Jan 2003`, `[Q]Q` → `Q1`, `Q2`, …
+- <mark>Zweizeilig:</mark> `|` — links der Teil *nach* dem Pipe, darüber der Teil *davor*, z. B. `YYYY \| MMM`
+- <mark>Erster Tick anders:</mark> `~~`, z. B. `YYYY~~'YY` (volles Jahr einmal, danach Kurzjahr)
+- <mark>Sprache:</mark> Monats- und Wochentagsnamen hängen am <mark>Output Locale</mark> (Design / Check & Describe), nicht am Preset allein
+
+<details>
+<summary>Screenshot</summary>
+![](/images/lektion3/anpassen.png)
+</details>
+
+
+
+Details, Token-Tabelle und Videos: [Date formats you can display in Datawrapper](https://academy.datawrapper.de/article/199-custom-date-formats-that-you-can-display-in-datawrapper).
+:::
+
+## Beispiele
+
+In [diesem Ordner](https://app.datawrapper.de/der-standard/archive/team/der-standard/445375) sind Beispiele für custom Achsenformate von Sekunden bis Wochen. Und [hier](https://docs.google.com/spreadsheets/d/1JFeUvCWh76aeUXcFk8RUxI_pyGfCPcY_kIpqAMJHVIA/edit?gid=886860283#gid=886860283) liegen die Daten dahinter
+
+
+# Mini-Quiz: Linie oder anderes Chart?
+
+::: {.callout-note appearance="default" title="So funktioniert’s"}
+Erst <mark>selbst entscheiden</mark> (Linie, Säulen/Balken, …), dann <mark>Lösung & Erklärung</mark> aufklappen.  
+Logik angelehnt an [When to use bar or line charts for time series data](https://observablehq.com/blog/bars-vs-lines-time-series-data) (Robert Kosara / Observable).
+:::
+
+::: {.chart-quiz}
+
+::: {.chart-quiz-item}
+### 1. BIP Österreich über die Zeit
+
+<mark>Daten:</mark> ein Wert pro <mark>Jahr</mark> (z. B. 2015–2024, realer BIP in Mrd. €).
+
+<p class="quiz-prompt">Linie oder Säulendiagramm?</p>
+
+<details>
+<summary>Lösung & Erklärung</summary>
+
+<mark>→ Säulendiagramm</mark> (in Datawrapper: *Column chart*)
+
+Pro Jahr gibt es <mark>genau einen</mark> Wert. Zwischen zwei Jahrespunkten „existiert“ kein verlässlicher Verlauf — im Gegensatz zur Temperatur, die zwischen 7 und 8 Uhr alle Werte dazwischen durchläuft. Eine Linie <mark>suggeriert</mark> ständige Veränderung; bei wenigen Jahreswerten sind <mark>Säulen</mark> oft klarer und ehrlicher.
+
+*Ausnahme:* Viele Jahrespunkte, Fokus auf <mark>Trend</mark> statt Einzeljahre — dann kann eine Linie trotzdem sinnvoll sein (Geschmack + Kontext).
+
+</details>
+:::
+
+::: {.chart-quiz-item}
+### 2. Aktien-Schlusskurs, jeder Handelstag
+
+<mark>Daten:</mark> ein Schlusskurs pro <mark>Börsentag</mark>, über <mark>mehrere Jahre</mark> (hunderte Punkte).
+
+<p class="quiz-prompt">Linie oder Säulen?</p>
+
+<details>
+<summary>Lösung & Erklärung</summary>
+
+<mark>→ Linie</mark>
+
+Viele Messpunkte auf wenig Platz — der Verlauf steht im Mittelpunkt. Technisch ist der Kurs nicht „glatt“ (nur ein Wert pro Tag), aber die Dichte der Punkte macht eine Linie <mark>lesbarer</mark> als hunderte Säulen.
+
+</details>
+:::
+
+::: {.chart-quiz-item}
+### 3. Durchschnittlicher Jahres-Schlusskurs
+
+<mark>Daten:</mark> pro <mark>Jahr</mark> der <mark>mittlere</mark> Schlusskurs (nur ~10–20 Werte).
+
+<p class="quiz-prompt">Linie oder Säulen?</p>
+
+<details>
+<summary>Lösung & Erklärung</summary>
+
+<mark>→ Säulen</mark>
+
+Ihr habt die Zeitreihe <mark>aggregiert</mark>: ein Wert pro Jahr. Das ist wieder <mark>diskret</mark> — wie im Observable-Beispiel mit dem jährlichen Apple-Durchschnitt. Säulen vergleichen die Jahre direkt; eine Linie wirkt hier oft künstlich glatt.
+
+</details>
+:::
+
+::: {.chart-quiz-item}
+### 4. Buchstaben-Häufigkeit im Englischen
+
+<mark>Daten:</mark> wie oft kommt <mark>A, B, C, …</mark> vor — <mark>sortierbar</mark>, keine Zeitachse.
+
+<p class="quiz-prompt">Linie, Säulen oder beides ok?</p>
+
+<details>
+<summary>Lösung & Erklärung</summary>
+
+<mark>→ Säulen — keine Linie</mark>
+
+Das sind <mark>Kategorien</mark>, keine kontinuierliche Zeit. Sortiert ihr die Buchstaben um, <mark>knickt</mark> die Linie wild, obwohl sich die Werte nicht geändert haben — reine Irreführung. Säulen bleiben lesbar, egal in welcher Reihenfolge.
+
+</details>
+:::
+
+:::
+
+
+# Bad Chart → Good Chart
+
+Vom schlimmsten zum besten Chart — nacheinander aufklappen und zwischen <mark>Roh</mark> und <mark>Verbessert</mark> hin- und herklicken. 
+
+::: {.chart-example-bad}
+<details class="chart-reveal">
+<summary>1 · Bad — Grafik anzeigen</summary>
+
+::: {.panel-tabset}
+## Roh
+
+{{< dw C2IGd >}}
+
+## Verbessert
+
+{{< dw uHVDZ >}}
+:::
+
+</details>
+:::
+
+::: {.chart-example-less-bad}
+<details class="chart-reveal">
+<summary>2 · Less bad — Grafik anzeigen</summary>
+
+::: {.panel-tabset}
+## Roh
+
+{{< dw r94HO >}}
+
+## Verbessert
+
+{{< dw 37ptv >}}
+:::
+
+</details>
+:::
+
+::: {.chart-example-good}
+<details class="chart-reveal">
+<summary>3 · Good — Grafik anzeigen</summary>
+
+::: {.panel-tabset}
+## Roh
+
+{{< dw YtOZr >}}
+
+## Verbessert
+
+{{< dw TODO >}}
+:::
+
+</details>
+:::
+
+::: {.chart-example-real-good}
+<details class="chart-reveal">
+<summary>4 · Real good — Grafik anzeigen</summary>
+
+::: {.panel-tabset}
+## Roh
+
+{{< dw sDRv3 >}}
+
+## Verbessert
+
+{{< dw TODO >}}
+:::
+
+</details>
+:::
+
+# Quick Wins
+
+::: {.callout-note .qw-leicht collapse="true" icon="false"}
+## 1 · Aussage in den Titel
+
+- Nicht „Arbeitslosenquote 2000–2024“, sondern „Arbeitslosigkeit in Österreich so niedrig wie zuletzt 2008“.
+:::
+
+::: {.callout-note .qw-leicht collapse="true" icon="false"}
+## 2 · Richtiges Zahlenformat
+
+- Prozent können direkt in Schritt 3 in Datarwapper eingefügt werden. "Exotische" Formate müssten als Präfix/Suffix angefügt werden
+- Nicht mehr Nachkommastellen als nötig: `12,3 %` statt `12,3456 %`.
+- Die <mark>Einheit</mark> gehört an die Achse oder in den Untertitel — nicht weglassen.
+:::
+
+::: {.callout-note .qw-leicht collapse="true" icon="false"}
+## 3 · Legende statt Labels am Linienende
+
+- Labels rechts am Linienende <mark>fressen horizontalen Platz</mark> — gerade mobil wird das Chart dann schmal.
+- Eine <mark>Legende über dem Chart</mark> spart diesen Platz.
+- Damit die Legende gut lesbar bleibt:
+  - Reihenfolge der Legende wie die Reihenfolge der Linien am Ende (oben → unten).
+  - Nur so viele Linien, dass die Farben <mark>klar unterscheidbar</mark> bleiben.
+:::
+
+::: {.callout-note .qw-mittel collapse="true" icon="false"}
+## 4 · Y-Achse bewusst wählen
+
+- Anders als bei Balken muss die Y-Achse <mark>nicht bei 0</mark> beginnen — es geht um die Veränderung.
+- Aber: Nicht so stark zoomen, dass kleine Schwankungen dramatisch wirken.
+:::
+
+::: {.callout-note .qw-mittel collapse="true" icon="false"}
+## 5 · Hervorheben statt bunt
+
+- Maximal <mark>2–3 Farben</mark>, der Rest grau.
+- Die Linie, um die es geht, farbig und etwas dicker.
+- Wenn im Titel eine Linie erwähnt wird, vllt in der gleichen Farbe highlighten. [Hier schauen](https://www.datawrapper.de/_/sDRv3/)
+:::
+
+::: {.callout-note .qw-mittel collapse="true" icon="false"}
+## 6 · Wenige Messpunkte sichtbar machen
+
+- Bei wenigen Datenpunkten <mark>Punkte (Symbole)</mark> auf der Linie zeigen — so sieht man, wo tatsächlich gemessen wurde.
+- Werte, die bis zur nächsten Änderung gleich bleiben (z. B. Leitzins), als <mark>Stufenlinie</mark> darstellen (Alternative zu Balkendiagrammen).
+:::
+
+::: {.callout-note .qw-mittel collapse="true" icon="false"}
+## 7 · Wichtige Ereignisse einzeichnen
+
+- Ereignisse wie Finanzkrise oder Pandemie als <mark>Annotation</mark> (Text mit Pfeil) einzeichnen.
+- Zeiträume als <mark>markierten Bereich</mark> hinterlegen — so erklärt sich ein Knick in der Linie von selbst.
+:::
+
+::: {.callout-note .qw-schwer collapse="true" icon="false"}
+## 8 · Gestrichelte Linien für Unsicheres
+
+- Eine durchgezogene Linie suggeriert <mark>gemessene Werte</mark>.
+- Prognosen, Schätzungen oder Lücken in den Daten <mark>gestrichelt</mark> zeigen.
+- Trick für „ab hier Prognose“: zwei Spalten anlegen (Ist-Werte / Prognose), die sich <mark>in einem Punkt überschneiden</mark>, und die Prognose-Linie gestrichelt stylen.
+- Fehlen Werte (z. B. keine Erhebung 2020), die Lücke lieber <mark>sichtbar lassen</mark>, als stillschweigend durchzuverbinden.
+:::
+
+# Ausprobieren
+
+- Tabelle 6 [hier](https://irihs.ihs.ac.at/id/eprint/7521/6/kuschej-steiner-2026-lebenssituation-migrantischen-neets-in-oesterreich.pdf)
+
+
+
+# WICHTIGES
+
+- Feedback zu Farben einholen!
+
+# Links
+
+- https://old.observablehq.com/blog/bars-vs-lines-time-series-data
+- https://designsystem.morningstar.com/whats-new/blog/plotting-time-series-data
+- https://www.datawrapper.de/blog/chart-types-guide

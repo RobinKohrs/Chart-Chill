@@ -1,1 +1,238 @@
 /* Add custom styles here */
+
+img[src*="lektion3/title"] {
+  object-position: center 20%;
+}
+
+/* Kapitel-Überschriften (# im Text, nicht der Seitentitel) */
+#quarto-document-content section.level1 > h1 {
+  color: #0b7a75;
+  margin-top: 3rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 3px solid #0b7a75;
+}
+
+/* Top-level bullets in lesson body: bolder + more air between items */
+#quarto-document-content ul:not(.nav) > li {
+  font-weight: 600;
+}
+
+#quarto-document-content ul:not(.nav) > li + li {
+  margin-top: 0.75rem;
+}
+
+#quarto-document-content ul:not(.nav) ul > li {
+  font-weight: 400;
+}
+
+#quarto-document-content ul:not(.nav) ul > li + li {
+  margin-top: 0.25rem;
+}
+
+/* Mini-Quiz: Fragenblock + aufklappbare Lösung */
+.chart-quiz .chart-quiz-item {
+  margin-bottom: 1.75rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.chart-quiz .chart-quiz-item:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.chart-quiz details {
+  margin-top: 0.75rem;
+}
+
+.chart-quiz summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: #2780e3;
+}
+
+.chart-quiz .quiz-prompt {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+/* Aufklappbare Datawrapper-Beispiele (iframe erst bei open laden) */
+.chart-reveal {
+  --accent: #495057;
+  --header: #e9ecef;
+  --tint: #f8f9fa;
+  margin: 1rem 0;
+  border-radius: 0.75rem;
+  background: var(--tint);
+  overflow: hidden;
+}
+
+.chart-reveal summary {
+  padding: 0.85rem 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--header);
+  color: var(--accent);
+}
+
+.chart-reveal summary::-webkit-details-marker {
+  display: none;
+}
+
+.chart-reveal summary::before {
+  content: "▸";
+  font-size: 0.85rem;
+  line-height: 1;
+  transition: transform 0.15s ease;
+}
+
+.chart-reveal[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.chart-reveal > :not(summary) {
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+}
+
+.chart-reveal .tabset-margin-container {
+  display: none;
+}
+
+/* Roh / Verbessert als Umschalter statt Reiter */
+.chart-reveal .panel-tabset {
+  margin-top: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.chart-reveal .panel-tabset .nav-tabs {
+  display: inline-flex;
+  width: fit-content;
+  gap: 0.25rem;
+  padding: 0.25rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 999px;
+  background: #fff;
+}
+
+.chart-reveal .panel-tabset .nav-tabs .nav-link {
+  border: none;
+  border-radius: 999px;
+  padding: 0.35rem 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: transparent;
+}
+
+.chart-reveal .panel-tabset .nav-tabs .nav-link.active {
+  color: #fff;
+  background: var(--accent);
+}
+
+.chart-reveal .panel-tabset .tab-content {
+  border: none;
+  padding: 0;
+  background: #fff;
+  border-radius: 0.5rem;
+}
+
+.chart-reveal .tab-pane > p {
+  margin: 0;
+  padding: 1rem;
+}
+
+.chart-reveal iframe {
+  display: block;
+  width: 100% !important;
+  border: none;
+}
+
+.dw-placeholder {
+  display: block;
+  padding: 2.5rem 1rem;
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.chart-example-bad .chart-reveal {
+  --accent: #b02a37;
+  --header: #f8d7da;
+  --tint: #fdf2f3;
+}
+
+.chart-example-less-bad .chart-reveal {
+  --accent: #8a6100;
+  --header: #fff3cd;
+  --tint: #fffaeb;
+}
+
+.chart-example-good .chart-reveal {
+  --accent: #198754;
+  --header: #d1e7dd;
+  --tint: #f0f8f4;
+}
+
+.chart-example-real-good .chart-reveal {
+  --accent: #0a3622;
+  --header: #a3cfbb;
+  --tint: #e3f1ea;
+}
+
+/* Quick Wins: Farbe nach Aufwand */
+.qw-leicht { --qw-accent: #198754; --qw-header: #d1e7dd; --qw-tint: #f0f8f4; }
+.qw-mittel { --qw-accent: #b07d00; --qw-header: #fff0c2; --qw-tint: #fffaeb; }
+.qw-schwer { --qw-accent: #c4372c; --qw-header: #f8d7da; --qw-tint: #fdf2f3; }
+
+.callout.qw-leicht,
+.callout.qw-mittel,
+.callout.qw-schwer {
+  border-left-color: var(--qw-accent) !important;
+  background: var(--qw-tint);
+}
+
+.callout.qw-leicht .callout-header,
+.callout.qw-mittel .callout-header,
+.callout.qw-schwer .callout-header {
+  background: var(--qw-header) !important;
+  color: var(--qw-accent);
+  font-weight: 700;
+}
+
+#quarto-document-content .callout.qw-leicht li,
+#quarto-document-content .callout.qw-mittel li,
+#quarto-document-content .callout.qw-schwer li {
+  font-weight: 400;
+}
+
+.qw-badge {
+  display: inline-block;
+  padding: 0.1em 0.6em;
+  border-radius: 999px;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: var(--qw-accent);
+  background: var(--qw-header);
+}
+
+/* Textmarker-Effekt (https://maximilian.hoffmann.me/posts/mark-text/) */
+mark {
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 225, 0, 0.1),
+    rgba(255, 225, 0, 0.7) 4%,
+    rgba(255, 225, 0, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}

@@ -1,0 +1,104 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: Arial, Helvetica, sans-serif;
+$presentation-heading-font: Arial, Helvetica, sans-serif;
+$presentation-font-size-root: 32px;
+$presentation-h1-font-size: 2.2em;
+$presentation-h2-font-size: 1.5em;
+$presentation-h3-font-size: 1.1em;
+$presentation-heading-color: #173c49;
+$body-color: #24333a;
+$link-color: #1b6a99;
+$presentation-line-height: 1.35;
+
+/*-- scss:rules --*/
+.reveal .slide h2 {
+  margin-bottom: 0.7em;
+}
+
+.reveal .slide li + li {
+  margin-top: 0.5em;
+}
+
+.reveal .slide .columns {
+  gap: 1.5em;
+}
+
+/* Textmarker-Effekt wie in styles.css (gilt nicht für revealjs) */
+.reveal .slide mark {
+  color: inherit;
+  margin: 0 -0.4em;
+  padding: 0.1em 0.4em;
+  border-radius: 0.8em 0.3em;
+  background: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 225, 0, 0.1),
+    rgba(255, 225, 0, 0.7) 4%,
+    rgba(255, 225, 0, 0.3)
+  );
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.reveal .slide details.answer {
+  border-top: 3px solid #86b6a1;
+  margin-top: 0.8em;
+  padding-top: 0.5em;
+  font-size: 0.9em;
+}
+
+.reveal .slide details.answer summary {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  color: $link-color;
+  list-style: none;
+}
+
+.reveal .slide details.answer summary::-webkit-details-marker {
+  display: none;
+}
+
+.reveal .slide details.answer summary::before {
+  content: "▸ ";
+}
+
+.reveal .slide details.answer[open] summary::before {
+  content: "▾ ";
+}
+
+.reveal .slide.date-formats table {
+  width: 100%;
+  font-size: 0.78em;
+}
+
+.reveal .slide.date-formats th,
+.reveal .slide.date-formats td {
+  padding: 0.55em 0.45em;
+}
+
+.reveal .slide .source {
+  display: inline-block;
+  font-size: 0.7em;
+  margin-top: 1em;
+}
+
+.reveal .slide.screenshot-slide img {
+  object-fit: contain;
+}
+
+.reveal .slide .dw-slide-embed {
+  height: 540px;
+  overflow: auto;
+  background: #fff;
+}
+
+.reveal .slide .dw-slide-embed iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+
+.reveal .slide .chart-link {
+  font-size: 0.6em;
+}

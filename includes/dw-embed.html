@@ -1,0 +1,39 @@
+<script>
+(function () {
+  if (window.__chartChillDwEmbed) return;
+  window.__chartChillDwEmbed = true;
+
+  window.addEventListener("message", function (e) {
+    if (e.data["datawrapper-height"] === void 0) return;
+    var heights = e.data["datawrapper-height"];
+    document.querySelectorAll("iframe[data-dw-src], iframe[src*='datawrapper.dwcdn.net']").forEach(function (iframe) {
+      if (iframe.contentWindow !== e.source) return;
+      for (var key in heights) {
+        if (Object.prototype.hasOwnProperty.call(heights, key)) {
+          iframe.style.height = heights[key] + "px";
+        }
+      }
+    });
+  });
+
+  function loadIframe(iframe) {
+    if (!iframe || iframe.dataset.dwLoaded) return;
+    var url = iframe.getAttribute("data-dw-src");
+    if (!url) return;
+    iframe.src = url;
+    iframe.dataset.dwLoaded = "1";
+  }
+
+  // Hidden iframes (closed details/callouts, inactive tabs) render at width 0, so load only visible ones
+  function loadVisible() {
+    document.querySelectorAll("iframe[data-dw-src]").forEach(function (iframe) {
+      if (iframe.offsetParent !== null) loadIframe(iframe);
+    });
+  }
+
+  document.addEventListener("toggle", loadVisible, true);
+  document.addEventListener("shown.bs.collapse", loadVisible);
+  document.addEventListener("shown.bs.tab", loadVisible);
+  loadVisible();
+})();
+</script>
